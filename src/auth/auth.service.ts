@@ -1,6 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { UsersService } from "../users/users.service";
-import { User } from "../models/user.model";
+import { User } from "../models/users.model";
 import { JwtService } from "@nestjs/jwt";
 import { TwilioService } from "../twilio/twilio.service";
 

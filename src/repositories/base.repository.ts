@@ -22,4 +22,8 @@ export class BaseRepository<T> implements BaseRepositoryInterface<T> {
 	async findOneByCondition(condition: object): Promise<T> {
 		return this.model.findOne({ ...condition }).exec();
 	}
+
+	async findAll() {
+		return this.model.find().exec();
+	}
 }

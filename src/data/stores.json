@@ -1,0 +1,471 @@
+[
+  {
+    "storeNumber": 1,
+    "storeName": "Hazel Dell",
+    "storeAddress": "1015 NE 78th St, Vancouver, WA 98665",
+    "lat": 45.6781374,
+    "long": -122.6629711
+  },
+  {
+    "storeNumber": 2,
+    "storeName": "Cartlandia",
+    "storeAddress": "8145 SE 82nd Ave, Portland, OR 97266",
+    "lat": 45.463522,
+    "long": -122.5822742
+  },
+  {
+    "storeNumber": 3,
+    "storeName": "Aloha",
+    "storeAddress": "18687 SW Tualatin Valley Hwy, Beaverton, OR 97006",
+    "lat": 45.4947325,
+    "long": -122.872341
+  },
+  {
+    "storeNumber": 4,
+    "storeName": "Beehive",
+    "storeAddress": "5669 Commercial St SE, Salem, OR 97306",
+    "lat": 44.8727494,
+    "long": -123.0276287
+  },
+  {
+    "storeNumber": 5,
+    "storeName": "The Yard",
+    "storeAddress": "4106 State St., Salem, OR 97301",
+    "lat": 44.9276092,
+    "long": -122.9832772
+  },
+  {
+    "storeNumber": 6,
+    "storeName": "Woodburn (Kiosk)",
+    "storeAddress": "1001 N Arney Rd, Woodburn, OR 97071",
+    "lat": 45.1561405,
+    "long": -122.8810939
+  },
+  {
+    "storeNumber": 7,
+    "storeName": "Newberg",
+    "storeAddress": "910 E 1st Street, Newberg, OR 97132",
+    "lat": 45.3000061,
+    "long": -122.9725313
+  },
+  {
+    "storeNumber": 9,
+    "storeName": "Sandy",
+    "storeAddress": "38424 Pioneer Blvd., Sandy, OR 97055",
+    "lat": 45.396756,
+    "long": -122.270745
+  },
+  {
+    "storeNumber": 11,
+    "storeName": "Happy Valley",
+    "storeAddress": "13551 SE 145th Ave, Happy Valley, OR 97015",
+    "lat": 45.424468,
+    "long": -122.517875
+  },
+  {
+    "storeNumber": 12,
+    "storeName": "Sellwood",
+    "storeAddress": "7875 SE 13th Ave., Portland, OR 97202",
+    "lat": 45.4674832,
+    "long": -122.655853
+  },
+  {
+    "storeNumber": 13,
+    "storeName": "Hawthorne",
+    "storeAddress": "1080 SE Madison St., Portland, OR 97214",
+    "lat": 45.5127611,
+    "long": -122.657889
+  },
+  {
+    "storeNumber": 14,
+    "storeName": "Eastport Plaza",
+    "storeAddress": "3905 SE 82nd Ave., Portland, OR 97266",
+    "lat": 45.4936569,
+    "long": -122.5817824
+  },
+  {
+    "storeNumber": 16,
+    "storeName": "Kennewick",
+    "storeAddress": "325 E Columbia Dr., Kennewick, WA 99336",
+    "lat": 46.21226,
+    "long": -119.1141752
+  },
+  {
+    "storeNumber": 19,
+    "storeName": "Powell",
+    "storeAddress": "3582 SE Powell Blvd, Portland, OR 97202",
+    "lat": 45.4964387,
+    "long": -122.6290864
+  },
+  {
+    "storeNumber": 21,
+    "storeName": "Forest Grove",
+    "storeAddress": "2131 Yew Street, Forest Grove, OR 97116",
+    "lat": 45.5216708,
+    "long": -123.0749179
+  },
+  {
+    "storeNumber": 23,
+    "storeName": "Woodburn (Indoor)",
+    "storeAddress": "1001 N Arney Rd, Woodburn, OR 97071",
+    "lat": 45.1561405,
+    "long": -122.8810939
+  },
+  {
+    "storeNumber": 25,
+    "storeName": "Stark",
+    "storeAddress": "14465 SE Stark St., Portland, OR 97233",
+    "lat": 45.519517,
+    "long": -122.5168958
+  },
+  {
+    "storeNumber": 27,
+    "storeName": "Estacada",
+    "storeAddress": "380 SW Zobrist St., Estacada, OR 97023",
+    "lat": 45.286948,
+    "long": -122.3385739
+  },
+  {
+    "storeNumber": 28,
+    "storeName": "Medford",
+    "storeAddress": "3050 Crater Lake Hwy., Medford, OR 97504",
+    "lat": 42.3608626,
+    "long": 122.8605855
+  },
+  {
+    "storeNumber": 29,
+    "storeName": "The Dalles",
+    "storeAddress": "2638 W 6th St., The Dalles, OR 97058",
+    "lat": 45.6167604,
+    "long": -121.2134329
+  },
+  {
+    "storeNumber": 30,
+    "storeName": "Davis",
+    "storeAddress": "8220 NE Davis St., Portland, OR 97220",
+    "lat": 45.5244331,
+    "long": -122.5814138
+  },
+  {
+    "storeNumber": 32,
+    "storeName": "East Vancouver",
+    "storeAddress": "13510 NE Fourth Plain Blvd., Vancouver, WA 98682",
+    "lat": 45.6726284,
+    "long": -122.5360871
+  },
+  {
+    "storeNumber": 34,
+    "storeName": "McMinnville",
+    "storeAddress": "540 NE Highway 99W, McMinnville, OR 97128",
+    "lat": 45.2235053,
+    "long": -123.1960819
+  },
+  {
+    "storeNumber": 36,
+    "storeName": "Lincoln City",
+    "storeAddress": "5040 SW Highway 101, Lincoln City, OR 97367",
+    "lat": 44.9284958,
+    "long": -124.0167155
+  },
+  {
+    "storeNumber": 37,
+    "storeName": "Hermiston",
+    "storeAddress": "240 SW 3rd St, Hermiston, OR 97838",
+    "lat": 45.8394062,
+    "long": -119.2961882
+  },
+  {
+    "storeNumber": 38,
+    "storeName": "Grants Pass",
+    "storeAddress": "104 NE Morgan Ln, Grants Pass, OR 97526",
+    "lat": 42.4625616,
+    "long": -123.3247331
+  },
+  {
+    "storeNumber": 39,
+    "storeName": "MLK",
+    "storeAddress": "7339 NE Martin Luther King Jr Blvd, Portland, OR 97211",
+    "lat": 45.5763337,
+    "long": -122.6642963
+  },
+  {
+    "storeNumber": 40,
+    "storeName": "Woodburn 3",
+    "storeAddress": "1600 Industrial Ave., Woodburn, OR 97071",
+    "lat": 45.1555304,
+    "long": -122.8305479
+  },
+  {
+    "storeNumber": 41,
+    "storeName": "Crooked River Ranch",
+    "storeAddress": "13959 SW Commercial Loop Rd, Crooked River Ranch, OR 97760",
+    "lat": 44.4383917,
+    "long": -121.2550294
+  },
+  {
+    "storeNumber": 42,
+    "storeName": "North Salem",
+    "storeAddress": "3995 Silverton Rd NE, Salem, OR 97305",
+    "lat": 44.9696195,
+    "long": -122.986554
+  },
+  {
+    "storeNumber": 43,
+    "storeName": "Lebanon",
+    "storeAddress": "2055 Primrose St, Lebanon, OR 97355",
+    "lat": 44.5264511,
+    "long": -122.9074064
+  },
+  {
+    "storeNumber": 44,
+    "storeName": "Boardman",
+    "storeAddress": "103 SE Front St, Boardman, OR 97818",
+    "lat": 45.8366969,
+    "long": -119.7026597
+  },
+  {
+    "storeNumber": 45,
+    "storeName": "Oregon City",
+    "storeAddress": "1401 Washington St, Oregon City, OR 97045",
+    "lat": 45.3617141,
+    "long": -122.6027309
+  },
+  {
+    "storeNumber": 46,
+    "storeName": "Silverton",
+    "storeAddress": "311 N Water St, Silverton, OR 97381",
+    "lat": 45.0065622,
+    "long": -122.7871153
+  },
+  {
+    "storeNumber": 47,
+    "storeName": "Troutdale",
+    "storeAddress": "151 SW 257th Dr, Troutdale, OR 97060",
+    "lat": 45.540036,
+    "long": -122.3940309
+  },
+  {
+    "storeNumber": 48,
+    "storeName": "Killeen",
+    "storeAddress": "3101 S Fort Hood St, Killeen, TX 76542",
+    "lat": 31.0876643,
+    "long": -97.7584323
+  },
+  {
+    "storeNumber": 49,
+    "storeName": "Fairview",
+    "storeAddress": "22320 NE Halsey St, Fairview, OR 97024",
+    "lat": 45.534888,
+    "long": -122.4355329
+  },
+  {
+    "storeNumber": 50,
+    "storeName": "Lacey",
+    "storeAddress": "5700 Lacey Blvd, Lacey, WA 98503",
+    "lat": 47.0364129,
+    "long": -122.8119148
+  },
+  {
+    "storeNumber": 52,
+    "storeName": "longview",
+    "storeAddress": "411 Oregon Way, longview, WA 98632",
+    "lat": 46.1215318,
+    "long": -122.9491873
+  },
+  {
+    "storeNumber": 53,
+    "storeName": "Kennewick 2",
+    "storeAddress": "33 S Garfield St, Kennewick, WA 99336",
+    "lat": 46.2075545,
+    "long": -119.1304426
+  },
+  {
+    "storeNumber": 54,
+    "storeName": "Pendleton",
+    "storeAddress": "1111 SW Frazer Ave, Pendleton, OR 97801",
+    "lat": 45.6664275,
+    "long": -118.7991795
+  },
+  {
+    "storeNumber": 54,
+    "storeName": "Kennewick 3",
+    "storeAddress": "6481 W Skagit Ave, Kennewick, WA 99336",
+    "lat": 46.224803,
+    "long": -119.2111129
+  },
+  {
+    "storeNumber": 57,
+    "storeName": "Olympia",
+    "storeAddress": "135 Cushing St. NW, Olympia, WA 98502",
+    "lat": 47.0453841,
+    "long": -122.9277414
+  },
+  {
+    "storeNumber": 58,
+    "storeName": "Prineville",
+    "storeAddress": "791 NW 3rd Street, Prineville, OR 97754",
+    "lat": 44.3031864,
+    "long": -120.8594189
+  },
+  {
+    "storeNumber": 59,
+    "storeName": "Madras",
+    "storeAddress": "130 SW 5th St, Madras, OR 97741",
+    "lat": 44.6342582,
+    "long": -121.1324302
+  },
+  {
+    "storeNumber": 61,
+    "storeName": "Missouri",
+    "storeAddress": "2160 State Hwy 248, Branson, MO 65616",
+    "lat": 36.6679026,
+    "long": -93.2528938
+  },
+  {
+    "storeNumber": 62,
+    "storeName": "California",
+    "storeAddress": "5353 Katella Ave STE B, Cypress, CA 90720",
+    "lat": 33.8035337,
+    "long": -118.042978
+  },
+  {
+    "storeNumber": 63,
+    "storeName": "Independence",
+    "storeAddress": "240 Monmouth St, Independence, OR 97351",
+    "lat": 44.851412,
+    "long": -123.189017
+  },
+  {
+    "storeNumber": 64,
+    "storeName": "Division",
+    "storeAddress": "2415 SE 35th Pl, Portland, OR 97214",
+    "lat": 45.5053275,
+    "long": -122.6306162
+  },
+  {
+    "storeNumber": 65,
+    "storeName": "Aloha 2",
+    "storeAddress": "20001 SW Tualatin Valley Hwy, Beaverton, OR 97003",
+    "lat": 45.495775,
+    "long": -122.885378
+  },
+  {
+    "storeNumber": 66,
+    "storeName": "Roseburg",
+    "storeAddress": "346 NW Garden Valley Blvd, Roseburg, OR 97470",
+    "lat": 43.2270073,
+    "long": -123.3604407
+  },
+  {
+    "storeNumber": 67,
+    "storeName": "Las Vegas",
+    "storeAddress": "7400 Las Vegas Blvd S, Las Vegas, NV 89123",
+    "lat": 36.0546119,
+    "long": -115.1721761
+  },
+  {
+    "storeNumber": 68,
+    "storeName": "Florida 1",
+    "storeAddress": "1798 W Hillsborough Ave, Tampa, FL 33603",
+    "lat": 27.9957336,
+    "long": -82.4827157
+  },
+  {
+    "storeNumber": 69,
+    "storeName": "Nob Hill PDX",
+    "storeAddress": "1855 NW 23rd Pl, Portland, OR 97210",
+    "lat": 45.5361804,
+    "long": -122.7026018
+  },
+  {
+    "storeNumber": 70,
+    "storeName": "Arizona",
+    "storeAddress": "4100 S Palo Verde Rd, Tucson, AZ 85714",
+    "lat": 32.1744554,
+    "long": -110.9230733
+  },
+  {
+    "storeNumber": 71,
+    "storeName": "Molalla",
+    "storeAddress": "102 N Molalla Ave, Molalla , OR 97038",
+    "lat": 45.147766,
+    "long": -122.5799033
+  },
+  {
+    "storeNumber": 72,
+    "storeName": "St Helens",
+    "storeAddress": "175 Bowling Alley Ln, St Helens, NV 97051",
+    "lat": 45.8537088,
+    "long": -122.8302105
+  },
+  {
+    "storeNumber": 73,
+    "storeName": "Keizer",
+    "storeAddress": "4415 River Rd NE, Keizer, OR 97303",
+    "lat": 44.9887188,
+    "long": -123.0297994
+  },
+  {
+    "storeNumber": 74,
+    "storeName": "Grants Pass 2",
+    "storeAddress": "835 NE A St, Grants Pass, OR 97526",
+    "lat": 42.4423103,
+    "long": -123.3172259
+  },
+  {
+    "storeNumber": 75,
+    "storeName": "Tigard 2",
+    "storeAddress": "12425 SW Main St, Tigard, OR 97223",
+    "lat": 45.430451,
+    "long": -122.7744651
+  },
+  {
+    "storeNumber": 76,
+    "storeName": "Eugene",
+    "storeAddress": "4190 Barger Dr, OR 97402",
+    "lat": 44.0842026,
+    "long": -123.1703916
+  },
+  {
+    "storeNumber": 77,
+    "storeName": "West Salem",
+    "storeAddress": "1233 River Bend Rd Nw, Salem, OR 97304",
+    "lat": 44.9669764,
+    "long": -123.0510753
+  },
+  {
+    "storeNumber": 78,
+    "storeName": "Hillsboro 2",
+    "storeAddress": "320 SE Baseline St, Hillsboro, OR 97123",
+    "lat": 45.5199163,
+    "long": -122.9881386
+  },
+  {
+    "storeNumber": 79,
+    "storeName": "Dallas",
+    "storeAddress": "995 Main Street, Dallas, OR 97338",
+    "lat": 44.919627,
+    "long": -123.3196819
+  },
+  {
+    "storeNumber": 81,
+    "storeName": "Veneta",
+    "storeAddress": "24979 E Broadway Ave, Veneta, OR 97487",
+    "lat": 44.0515024,
+    "long": -123.357201
+  },
+  {
+    "storeNumber": 82,
+    "storeName": "Tillamook",
+    "storeAddress": "1816 1st St, Tillamook, OR 97141",
+    "lat": 45.4579532,
+    "long": -123.8479626
+  },
+  {
+    "storeNumber": 83,
+    "storeName": "Moses Lake",
+    "storeAddress": "814 N Stratford Rd, Moses Lake, WA 98837",
+    "lat": 47.1397694,
+    "long": -119.2820608
+  }
+]

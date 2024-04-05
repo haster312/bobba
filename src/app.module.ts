@@ -10,6 +10,12 @@ import mongodb from "./config/database/mongodb";
 import { UsersService } from "./users/users.service";
 import { JwtService } from "@nestjs/jwt";
 import { TwilioService } from "./twilio/twilio.service";
+import { ProductsController } from './products/products.controller';
+import { ProductsService } from './products/products.service';
+import { StoresService } from './stores/stores.service';
+import { StoresController } from './stores/stores.controller';
+import { StoresModule } from './stores/stores.module';
+import { ProductsModule } from './products/products.module';
 
 @Module({
 	imports: [
@@ -17,14 +23,18 @@ import { TwilioService } from "./twilio/twilio.service";
 		UsersModule,
 		AuthModule,
 		mongodb,
+		StoresModule,
+		ProductsModule,
 	],
-	controllers: [AppController],
+	controllers: [AppController, ProductsController, StoresController],
 	providers: [
 		AppService,
 		AuthService,
 		UsersService,
 		JwtService,
 		TwilioService,
+		ProductsService,
+		StoresService,
 	],
 })
 export class AppModule {}

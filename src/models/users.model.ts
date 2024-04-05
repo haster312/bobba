@@ -44,10 +44,13 @@ export class User extends BaseModel {
 	appleToken: string;
 
 	@Prop({ enum: GENDER })
-	gender: string;
+	gender: GENDER;
 
 	@Prop({ minlength: 4, maxlength: 6 })
 	verifyToken: string;
+
+	@Prop({})
+	acceptTerm: Boolean
 }
 
-export const UserModel = SchemaFactory.createForClass(User);
+export const UsersModel = SchemaFactory.createForClass(User);
