@@ -15,7 +15,6 @@ import { StoresService } from "./stores.service";
 @Controller('stores')
 export class StoresController {
     constructor(private storeService: StoresService) {}
-
     @UseGuards(JwtAuthGuard)
     @HttpCode(HttpStatus.OK)
     @Get("/")

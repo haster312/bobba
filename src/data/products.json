@@ -3,180 +3,253 @@
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/hot-drink.jpg",
     "productName": "Hot Drink",
     "productDescription": "Choose a flavor: almond, chocolate, coconut, coffee, lavender, matcha, milk tea, rose, taro, thai tea, or vanilla.",
-    "productPrice": "6.25"
+    "productCategory": "DRINK",
+    "productPrice": "6.25",
+    "hasFlavor": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/iced-creamy-tea.jpg",
     "productName": "Iced Creamy Tea",
     "productDescription": "Choose up to 2 flavors: almond, coconut, coffee, honeydew, lavender, matcha, mango, milk tea, strawberry, taro, thai tea, or vanilla.",
-    "productPrice": "6.25"
+    "productCategory": "DRINK",
+    "productPrice": "6.25",
+    "hasFlavor": 2
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/iced-tea.jpg",
     "productName": "Iced Tea",
     "productDescription": "Pick a base: green tea, black tea, or lemonade. Then, choose up to 2 flavors: banana, blueberry, green apple, honeydew, kiwi, lychee, mango, orange, passion fruit, peach, pineapple, raspberry, strawberry,…",
-    "productPrice": "6.25"
+    "productPrice": "6.25",
+    "productCategory": "DRINK",
+    "hasFlavor": 2,
+    "hasBase": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/blended-drink.jpg",
     "productName": "Blended Tea",
     "productDescription": "Choose up to 2 flavors: almond, avocado (+$1 extra), banana, berry-banana (+$1 extra), blueberry, coconut, coffee, green apple, honeydew, kiwi, lavender, lemonade (+$0.25 extra), lychee, mango, matcha, milk tea, orange,…",
-    "productPrice": "7.00"
+    "productPrice": "7.00",
+    "productCategory": "DRINK",
+    "hasFlavor": 2
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/05/strawberry-chamoy.png",
     "productName": "Strawberry Chamoy",
     "productDescription": "Sweet and tangy drink made with strawberry syrup and chamoy sauce. The sauce is a delicious blend, giving the drink a unique and spicy kick. Served over ice, this refreshing…",
-    "productPrice": "7.25"
+    "productPrice": "7.25",
+    "productCategory": "DRINK"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/05/mango-chamoy.png",
     "productName": "Mango Chamoy",
     "productDescription": "Sweet and tangy mango, perfectly paired with the bold and savory flavors of chamoy sauce.",
-    "productPrice": "7.25"
+    "productPrice": "7.25",
+    "productCategory": "DRINK"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/05/brown-sugar-milk-tea.png",
     "productName": "Brown Sugar Milk Tea",
     "productDescription": "Creamy milk and brown sugar syrup, topped with our original soft, sweet boba made with honey, brown sugar, and tapioca. This indulgent beverage is the perfect pick-me-up any time.",
-    "productPrice": "6.50"
+    "productPrice": "6.50",
+    "productCategory": "DRINK"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/05/arnold-palmer.png",
     "productName": "Arnold Palmer",
     "productDescription": "A classic beverage made with a refreshing combination of zesty lemonade and rich black tea with your choice of toppings!",
-    "productPrice": "6.25"
+    "productPrice": "6.25",
+    "productCategory": "DRINK"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/05/creamsicle.png",
     "productName": "Creamsicle",
     "productDescription": "A refreshing frozen treat that blends the sweet and tangy flavors of orange and creamy vanilla.",
-    "productPrice": "7.00"
+    "productPrice": "7.00",
+    "productCategory": "DRINK"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/classic-dog.png",
     "productName": "Classic Dog",
     "productDescription": "A juicy, all-beef frankfurter grilled to perfection and nestled in a soft bun. Topped with your choice of ketchup, mustard, relish, or mayonnaise.",
-    "productPrice": "7.00"
+    "productPrice": "7.00",
+    "productCategory": "FOOD",
+    "hasCondiment": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/chili-cheese-dog.png",
     "productName": "Chili Cheese Dog",
     "productDescription": "A delicious all-beef frankfurter grilled to perfection, served in a soft bun, and topped with savory chili and melted cheddar cheese.",
-    "productPrice": "9.00"
+    "productPrice": "9.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/super-dog.png",
     "productName": "Super Cheesy Bacon Dog",
     "productDescription": "An irresistible, all-beef frankfurter grilled to perfection, nestled in a soft bun with crispy bacon, bell peppers, onions, melted cheddar cheese sauce, ketchup, mustard, and mayonnaise on top.",
-    "productPrice": "10.00"
+    "productPrice": "10.00",
+    "productCategory": "FOOD",
+    "hasCondiment": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/cheesy-fries.png",
     "productName": "Cheesy Fries",
     "productDescription": "Our cheesy fries are the ultimate comfort food that will satisfy any cheese lover's cravings. A generous portion of crispy golden fries, topped with melted cheddar cheese sauce.",
-    "productPrice": "8.00"
+    "productPrice": "8.00",
+    "productCategory": "FOOD",
+    "hasCondiment": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/chili-cheese-fries.png",
     "productName": "Chili Cheese Fries",
     "productDescription": "A hearty portion of crispy golden fries, smothered with savory chili and melted cheddar cheese sauce.",
-    "productPrice": "9.00"
+    "productPrice": "9.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/super-fries-300x300.png",
     "productName": "Super Cheesy Bacon Fries",
     "productDescription": "An ample helping of crispy golden fries, topped with a substantial amount of melted cheddar cheese sauce with crispy bacon bits, bell peppers, and onions on top.",
-    "productPrice": "10.00"
+    "productPrice": "10.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/cheesy-nachos.png",
     "productName": "Cheesy Nachos",
     "productDescription": "The ultimate comfort food that will satisfy any cheese lover's cravings. A delectable portion of crispy tortilla chips, topped with melted cheddar cheese sauce.",
-    "productPrice": "8.00"
+    "productPrice": "8.00",
+    "productCategory": "FOOD",
+    "hasCondiment": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/chili-cheese-nachos.png",
     "productName": "Chili Cheese Nachos",
     "productDescription": "A generous portion of crispy tortilla chips, topped with savory chili and melted cheddar cheese sauce.",
-    "productPrice": "9.00"
+    "productPrice": "9.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/super-nachos.png",
     "productName": "Super Cheesy Bacon Nachos",
     "productDescription": "Bountiful amount of crispy tortilla chips, topped with a generous amount of melted cheddar cheese sauce with crispy bacon bits, bell peppers, and onions on top.",
-    "productPrice": "10.00"
+    "productPrice": "10.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/tuna-poke-salad.png",
     "productName": "Tuna Poke Bowl",
     "productDescription": "A delectable dish of fresh sushi-grade tuna served over steamed rice or salad. Topped with avocado, cucumber, crab salad, ginger, corn, nori, onions, sesame seeds, poke sauce, and spicy mayo,…",
-    "productPrice": "17.00"
+    "productPrice": "17.00",
+    "productCategory": "FOOD",
+    "hasBase": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/tofu-poke-salad.png",
     "productName": "Tofu Poke Bowl",
     "productDescription": "A nutritious and flavorful dish that's perfect for veggie lovers. This bowl features a delicious blend of ingredients including avocado, cucumber, crab salad, ginger, corn, nori, onions, sesame seeds, and…",
-    "productPrice": "14.00"
+    "productPrice": "14.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/orange-chicken-bowl.jpg",
     "productName": "Crispy Orange Chicken Rice Bowl",
     "productDescription": "Tender pieces of Zesty succulent orange chicken served over a bed of fluffy rice in a deliciously satisfying rice bowl.",
-    "productPrice": "12.00"
+    "productPrice": "12.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/sweet-chili-rice-bowl.jpg",
     "productName": "Crispy Sweet Chili Rice Bowl",
     "productDescription": "Savory and slightly spicy chicken served over steamed rice.",
-    "productPrice": "12.00"
+    "productPrice": "12.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/chicken-cone-cheesy.jpg",
     "productName": "Chicken Waffle Cone",
     "productDescription": "Our savory chicken waffle cone is a unique take on a classic dish. Enjoy crispy and juicy chicken served in a warm, fluffy waffle cone with your choice of toppings:…",
-    "productPrice": "9.00"
+    "productPrice": "9.00",
+    "productCategory": "FOOD",
+    "hasFlavor": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/gyozas.png",
-    "productName": "Crispy Gyoza",
+    "productName": "Crispy Gyoza 4 pieces",
     "productDescription": "Japanese dumplings filled with savory ground pork, cabbage, garlic, and ginger, pan-fried to crispy perfection.",
-    "productPrice": "5.00"
+    "productPrice": "5.00",
+    "productCategory": "FOOD"
+  },
+  {
+    "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/gyozas.png",
+    "productName": "Crispy Gyoza 8 pieces",
+    "productDescription": "Japanese dumplings filled with savory ground pork, cabbage, garlic, and ginger, pan-fried to crispy perfection.",
+    "productPrice": "7.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/springrolls.png",
-    "productName": "Crispy Spring Rolls",
+    "productName": "Crispy Spring Rolls 3 pieces",
     "productDescription": "Light and crispy VietproductNamese appetizers made with rice paper, filled with vegetables, and served with a sweet and sour dipping sauce.",
-    "productPrice": "5.00"
+    "productPrice": "5.00",
+    "productCategory": "FOOD"
+  },
+  {
+    "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/springrolls.png",
+    "productName": "Crispy Spring Rolls 6 pieces",
+    "productDescription": "Light and crispy VietproductNamese appetizers made with rice paper, filled with vegetables, and served with a sweet and sour dipping sauce.",
+    "productPrice": "7.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/03/churros.jpg",
     "productName": "Churros",
     "productDescription": "Freshly fried churros, coated with a sprinkle of cinnamon sugar for the perfect balance of sweetness and crunch. A flavorful dessert to complement your drinks.",
-    "productPrice": "3.00"
+    "productPrice": "3.00",
+    "productCategory": "FOOD"
+  },
+  {
+    "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2023/03/churros.jpg",
+    "productName": "Churros 2 pieces",
+    "productDescription": "Freshly fried churros, coated with a sprinkle of cinnamon sugar for the perfect balance of sweetness and crunch. A flavorful dessert to complement your drinks.",
+    "productPrice": "3.00",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/corn-sticks.png",
     "productName": "Corn Sticks",
     "productDescription": "Grilled corn on the cob, coated with a creamy blend of mayonnaise, Parmesan cheese, and chili powder. Served with your choice of toppings from plain, cheesy, or spicy cheesy options.",
-    "productPrice": "5.50"
+    "productPrice": "5.50",
+    "productCategory": "FOOD",
+    "hasFlavor": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/banana-dippers.png",
     "productName": "Banana Dippers",
     "productDescription": "Freshly ripe bananas are coated in a creamy chocolate sauce and topped with your choice of plain, coconut, peanuts, or sprinkles.",
-    "productPrice": "5.50"
+    "productPrice": "5.50",
+    "productCategory": "FOOD",
+    "hasTopping": 1
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/cheesecake.png",
     "productName": "Cheesecake Dippers",
     "productDescription": "Delightful bites of creamy cheesecake, dipped in our delicious chocolate and topped with your choice of plain, coconut, peanuts, or sprinkles.",
-    "productPrice": "6.50"
+    "productPrice": "6.50",
+    "productCategory": "FOOD"
   },
   {
     "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/strawberry-dippers.png",
     "productName": "Strawberry Dippers",
     "productDescription": "Juicy strawberries, perfectly dipped in a creamy and rich chocolate sauce and topping of your choice: plain, coconut, peanuts, or sprinkles.",
-    "productPrice": "3.50"
+    "productPrice": "3.50",
+    "productCategory": "FOOD",
+    "hasTopping": 1
+  },
+  {
+    "productImage": "https://bobablastic.com/cartlandia/wp-content/uploads/sites/6/2021/01/strawberry-dippers.png",
+    "productName": "Strawberry Dippers 2 pieces",
+    "productDescription": "Juicy strawberries, perfectly dipped in a creamy and rich chocolate sauce and topping of your choice: plain, coconut, peanuts, or sprinkles.",
+    "productPrice": 5.00,
+    "productCategory": "FOOD",
+    "hasTopping": 1
   }
 ]
