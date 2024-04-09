@@ -4,9 +4,10 @@ import { ConfigService } from "@nestjs/config";
 import { ValidationPipe } from "@nestjs/common";
 
 export enum AddonType {
-    BASE,
-    FLAVOR,
-    TOPPING,
+    BASE = "base",
+    FLAVOR = "flavor",
+    TOPPING = "topping",
+    CONDIMENT = "condiment"
 }
 
 async function bootstrap() {
@@ -16,7 +17,6 @@ async function bootstrap() {
     await app.listen(configService.get<number>("PORT"));
 
     console.table({ "Start with port": configService.get<number>("PORT") });
-
     const server = app.getHttpServer();
     const router = server._events.request._router;
     const availableRoutes: [] = router.stack

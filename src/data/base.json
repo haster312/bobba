@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Black Tea",
+    "category": "drink"
+  },
+  {
+    "name": "Green Tea",
+    "category": "drink"
+  },
+  {
+    "name": "Lemonade",
+    "category": "drink"
+  }
+]

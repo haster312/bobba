@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Aloe Vera Jelly",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Custard",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Green Apple Jelly",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Honey Boba",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Lychee Jelly",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Mango Jelly",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Popping Peach",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Popping Strawberry",
+    "price": 0.75,
+    "category": "drink"
+  },
+  {
+    "name": "Rainbow Jelly",
+    "price": 0.75,
+    "category": "drink"
+  }
+]

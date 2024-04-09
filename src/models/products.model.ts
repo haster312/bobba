@@ -5,7 +5,7 @@ import {AddonType} from "./addon.model";
 
 export type ProductDocument = HydratedDocument<Product>;
 export enum ProductCategory {
-    DRINK, FOOD
+    DRINK = "drink", FOOD = "food"
 }
 
 @Schema({
@@ -22,7 +22,7 @@ export class Product extends BaseModel {
     @Prop({ required: true })
     productDescription: string;
 
-    @Prop({ required: true, enum: Object.values(ProductCategory).filter(value => typeof value === "string")})
+    @Prop({ required: true, enum: Object.values(ProductCategory) })
     productCategory: ProductCategory;
 
     @Prop({ required: true })

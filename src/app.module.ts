@@ -26,15 +26,13 @@ import { ProductsModule } from './products/products.module';
 		StoresModule,
 		ProductsModule,
 	],
-	controllers: [AppController, ProductsController, StoresController],
+	controllers: [AppController],
 	providers: [
 		AppService,
 		AuthService,
 		UsersService,
 		JwtService,
 		TwilioService,
-		ProductsService,
-		StoresService,
 	],
 })
 export class AppModule {}

@@ -25,7 +25,22 @@ export class Store extends BaseModel {
     lat: number;
 
     @Prop()
-    long: number
+    long: number;
+
+    @Prop()
+    city: string;
+
+    @Prop()
+    state: string;
+
+    @Prop()
+    postalCode: string;
+
+    @Prop()
+    countryCode: string;
+
+    @Prop()
+    country: string;
 }
 
 export const StoresModel = SchemaFactory.createForClass(Store);

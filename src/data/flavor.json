@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Almond",
+    "category": "drink"
+  },
+  {
+    "name": "Coconut",
+    "category": "drink"
+  },
+  {
+    "name": "Coffee Milk",
+    "category": "drink"
+  },
+  {
+    "name": "Lavender",
+    "category": "drink"
+  },
+  {
+    "name": "Matcha",
+    "category": "drink"
+  },
+  {
+    "name": "Milk Tea",
+    "category": "drink"
+  },
+  {
+    "name": "Rose",
+    "category": "drink"
+  },
+  {
+    "name": "Taro",
+    "category": "drink"
+  },
+  {
+    "name": "Thai Tea",
+    "category": "drink"
+  },
+  {
+    "name": "Vanilla",
+    "category": "drink"
+  }
+]

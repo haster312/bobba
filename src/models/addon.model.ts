@@ -1,14 +1,15 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument } from "mongoose";
 import { BaseModel } from "./base.model";
+import {ProductCategory} from "./products.model";
 
 export type AddonDocument = HydratedDocument<Addon>;
 
 export enum AddonType {
-    BASE,
-    FLAVOR,
-    TOPPING,
-    CONDIMENT
+    BASE = "base",
+    FLAVOR = "flavor",
+    TOPPING = "topping",
+    CONDIMENT = "condiment"
 }
 
 @Schema({
@@ -16,13 +17,16 @@ export enum AddonType {
 })
 export class Addon extends BaseModel {
     @Prop({ required: true })
-    addonName: string;
+    name: string;
 
-    @Prop({ required: true, enum: Object.values(AddonType).filter(value => typeof value === "string") })
-    addonType: AddonType;
+    @Prop({ required: true, enum: Object.values(AddonType) })
+    type: AddonType;
 
-    @Prop({ required: true })
-    addonPrice: number;
+    @Prop()
+    price: number;
+
+    @Prop({ required: true, enum: Object.values(ProductCategory) })
+    category: ProductCategory;
 }
 
 export const AddonModel = SchemaFactory.createForClass(Addon);
