@@ -3,6 +3,10 @@ import { HydratedDocument } from "mongoose";
 import { BaseModel } from "./base.model";
 
 export type StoreDocument = HydratedDocument<Store>;
+interface Geometry {
+    type: string,
+    coordinates: Array<number>
+}
 
 @Schema({
     timestamps: {
@@ -11,6 +15,7 @@ export type StoreDocument = HydratedDocument<Store>;
     },
     versionKey: false
 })
+
 export class Store extends BaseModel {
     @Prop({ required: true })
     storeNumber: number;
@@ -27,11 +32,17 @@ export class Store extends BaseModel {
     @Prop()
     long: number;
 
+    @Prop({ type: { type: String }, coordinates: Array })
+    geometry: Object;
+
     @Prop()
     city: string;
 
     @Prop()
     state: string;
+
+    @Prop()
+    stateName: string;
 
     @Prop()
     postalCode: string;
@@ -43,4 +54,4 @@ export class Store extends BaseModel {
     country: string;
 }
 
-export const StoresModel = SchemaFactory.createForClass(Store);
+export const StoresModel = SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });

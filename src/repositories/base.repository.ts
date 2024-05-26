@@ -2,7 +2,7 @@ import { BaseRepositoryInterface } from "./base.interface";
 import { Model } from "mongoose";
 
 export class BaseRepository<T> implements BaseRepositoryInterface<T> {
-	private model: Model<T>;
+	public model: Model<T>;
 	constructor(model: Model<T>) {
 		this.model = model;
 	}

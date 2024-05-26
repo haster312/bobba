@@ -42,6 +42,15 @@ export class Product extends BaseModel {
 
     @Prop({ default: 0 })
     hasTopping: number;
+
+    @Prop({ required: false })
+    flavor: [];
+    @Prop({ required: false })
+    condiment: [];
+    @Prop({ required: false })
+    topping: [];
+    @Prop({ required: false })
+    base: [];
 }
 
 export const ProductsModel = SchemaFactory.createForClass(Product);

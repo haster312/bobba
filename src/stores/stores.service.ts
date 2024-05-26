@@ -15,9 +15,6 @@ export class StoresService implements OnModuleInit {
             const stores = storeBuffer.toString("utf-8");
             for (let store of JSON.parse(stores)) {
                 const location = await this.loadLocation(store.storeAddress, store.lat, store.long);
-                if (location) {
-
-                }
                 await this.storeRepository.create({
                     ...store,
                     ...location
@@ -54,6 +51,11 @@ export class StoresService implements OnModuleInit {
                 country: address.country,
                 city: address.municipality,
                 state: address.countrySubdivision,
+                stateName: address.countrySubdivisionName,
+                geometry: {
+                    type: "Point",
+                    coordinates: [long, lat]
+                }
             }
         }
 

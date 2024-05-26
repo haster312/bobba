@@ -4,6 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import {AddonRepository} from "../repositories/addon.repository";
 import {AddonType} from "../models/addon.model";
+import {ProductCategory} from "../models/products.model";
 
 @Injectable()
 export class ProductsService implements OnModuleInit {
@@ -50,7 +51,10 @@ export class ProductsService implements OnModuleInit {
                 file = "topping";
                 break;
             case AddonType.FLAVOR:
-                file = "flavors";
+                file = "flavor";
+                break;
+            case AddonType.CONDIMENT:
+                file = "condiment";
                 break;
         }
         if (file) {
@@ -59,11 +63,15 @@ export class ProductsService implements OnModuleInit {
                 const addons = buffer.toString("utf-8");
                 for (let addon of JSON.parse(addons)) {
                     let price = addon.price ? addon.price : null;
+                    let addonCategory = addon.category.trim();
 
+                    let category = addonCategory === 'drink' ? ProductCategory.DRINK : ProductCategory.FOOD;
+                    console.log(addon);
                     await this.addonRepository.create({
                         name: addon.name.trim(),
                         price,
-                        type: type
+                        type: type,
+                        category,
                     });
                 }
             }
