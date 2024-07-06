@@ -20,15 +20,15 @@ export class AuthController {
 		@Body() validatePhoneToken: ValidatePhoneToken,
 		@Res() res,
 	) {
-		const token =
-			await this.authService.validatePhoneToken(validatePhoneToken);
-		if (token === "") {
+		const userToken = await this.authService.validatePhoneToken(validatePhoneToken);
+
+		if (!userToken) {
 			return res
 				.status(HttpStatus.BAD_REQUEST)
 				.send({ message: "Verify token is not valid" });
 		}
 
-		return res.status(HttpStatus.OK).send({ token: token });
+		return res.status(HttpStatus.OK).send(userToken);
 	}
 
 	@HttpCode(HttpStatus.OK)

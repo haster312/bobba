@@ -7,7 +7,7 @@ import {
     Req,
     Get,
     UseGuards,
-    Post,
+    Query,
 } from "@nestjs/common";
 import { JwtAuthGuard } from "../auth/jwt-auth-guard";
 import { StoresService } from "./stores.service";
@@ -22,9 +22,19 @@ export class StoresController {
     @UseGuards(JwtAuthGuard)
     @HttpCode(HttpStatus.OK)
     @Get("/")
-    async getAllStores(@Req() req, @Res() res) {
+    async getAllStores(@Query() locationRadius: LocationRadius, @Req() req, @Res() res) {
         try {
-            const stores = await this.storeService.storeRepository.findAll();
+            let stores: Array<Store>;
+            if (locationRadius.lat && locationRadius.long) {
+                stores = await this.storeRepository.findStoreByRadius(locationRadius);
+                if (stores.length == 0) {
+                    return res.status(HttpStatus.BAD_REQUEST).send({
+                        message: "Cannot find any store, increase distance"
+                    });
+                }
+            } else {
+                stores = await this.storeService.storeRepository.findAll();
+            }
 
             return res.status(HttpStatus.OK).send({ stores });
         } catch (e) {
@@ -35,9 +45,8 @@ export class StoresController {
     @UseGuards(JwtAuthGuard)
     @HttpCode(HttpStatus.OK)
     @Get("/radius")
-    async getStoreByLocation(@Body() locationRadius: LocationRadius, @Req() req, @Res() res) {
+    async getStoreByLocation(@Query() locationRadius: LocationRadius, @Req() req, @Res() res) {
         try {
-
             const result = await this.storeRepository.findStoreByRadius(locationRadius);
             if (result.length == 0) {
                 return res.status(HttpStatus.BAD_REQUEST).send({

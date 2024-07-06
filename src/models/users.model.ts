@@ -22,7 +22,10 @@ export class User extends BaseModel {
 	@Prop()
 	lastName: string;
 
-	@Prop({ required: true })
+	@Prop({ default: false })
+	isUpdated: boolean;
+
+	@Prop({ required: true, unique: true })
 	phoneNumber: string;
 
 	@Prop()
@@ -51,6 +54,7 @@ export class User extends BaseModel {
 
 	@Prop({})
 	acceptTerm: Boolean
+	accessToken: string;
 }
 
 export const UsersModel = SchemaFactory.createForClass(User);

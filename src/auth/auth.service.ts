@@ -3,7 +3,12 @@ import { UsersService } from "../users/users.service";
 import { User } from "../models/users.model";
 import { JwtService } from "@nestjs/jwt";
 import { TwilioService } from "../twilio/twilio.service";
+import {ValidatePhoneToken} from "../validator/ValidatePhoneToken";
 
+type UserToken = {
+	user: User,
+	accessToken: String,
+}
 @Injectable()
 export class AuthService {
 	constructor(
@@ -12,12 +17,12 @@ export class AuthService {
 		private twilioService: TwilioService,
 	) {}
 
-	async validatePhoneToken(validatePhoneToken): Promise<string> {
+	async validatePhoneToken(validatePhoneToken: ValidatePhoneToken): Promise<UserToken|null> {
 		const user =
 			await this.usersService.verifyPhoneToken(validatePhoneToken);
 		let accessToken = "";
 		if (!user) {
-			return accessToken;
+			return null;
 		}
 
 		accessToken = await this.jwtService.signAsync({
@@ -30,8 +35,10 @@ export class AuthService {
 		// Clear verifyToken
 		user.verifyToken = null;
 		await this.usersService.clearVerityToken(user);
-
-		return accessToken;
+		return {
+			user,
+			accessToken
+		};
 	}
 
 	async sendPhoneToken(phoneNumber): Promise<User> {

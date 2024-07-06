@@ -16,8 +16,10 @@ export class UsersService {
 		let user = await this.usersRepository.findOneByCondition({
 			phoneNumber,
 		});
+
 		if (!user) {
 			user = await this.usersRepository.create({ phoneNumber });
+			console.log(user);
 		}
 
 		user.verifyToken = await this.generateTokenAndCheck();
