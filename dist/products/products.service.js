@@ -31,7 +31,7 @@ let ProductsService = class ProductsService {
             }
         }
     }
-    async onModuleInit() {
+    async migrate() {
         for (let value of Object.values(addon_model_1.AddonType)) {
             if (typeof value == "string") {
                 const addons = await this.addonRepository.findOneByCondition({ type: value });

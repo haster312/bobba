@@ -17,18 +17,16 @@ const common_1 = require("@nestjs/common");
 const jwt_auth_guard_1 = require("../auth/jwt-auth-guard");
 const stores_service_1 = require("./stores.service");
 const LocationRadius_1 = require("../validator/LocationRadius");
-const stores_repository_1 = require("../repositories/stores.repository");
 const CountryCode_1 = require("../validator/CountryCode");
 let StoresController = class StoresController {
-    constructor(storeService, storeRepository) {
+    constructor(storeService) {
         this.storeService = storeService;
-        this.storeRepository = storeRepository;
     }
     async getAllStores(locationRadius, req, res) {
         try {
             let stores;
             if (locationRadius.lat && locationRadius.long) {
-                stores = await this.storeRepository.findStoreByRadius(locationRadius);
+                stores = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
                 if (stores.length == 0) {
                     return res.status(common_1.HttpStatus.BAD_REQUEST).send({
                         message: "Cannot find any store, increase distance"
@@ -36,9 +34,9 @@ let StoresController = class StoresController {
                 }
             }
             else {
-                stores = await this.storeService.storeRepository.findAll();
+                stores = await this.storeService.storeRepository.findAllSTore();
             }
-            return res.status(common_1.HttpStatus.OK).send({ stores });
+            return res.status(common_1.HttpStatus.OK).send(stores);
         }
         catch (e) {
             return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
@@ -46,7 +44,7 @@ let StoresController = class StoresController {
     }
     async getStoreByLocation(locationRadius, req, res) {
         try {
-            const result = await this.storeRepository.findStoreByRadius(locationRadius);
+            const result = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
             if (result.length == 0) {
                 return res.status(common_1.HttpStatus.BAD_REQUEST).send({
                     message: "Cannot find any store, increase distance"
@@ -60,7 +58,7 @@ let StoresController = class StoresController {
     }
     async getStoreByState(countryCode, req, res) {
         try {
-            const results = await this.storeRepository.findStoreByCountryCode(countryCode.countryCode);
+            const results = await this.storeService.storeRepository.findStoreByCountryCode(countryCode.countryCode);
             if (results.length == 0) {
                 return res.status(common_1.HttpStatus.BAD_REQUEST).send({
                     message: "Cannot get lit stores for current country"
@@ -116,6 +114,6 @@ __decorate([
 ], StoresController.prototype, "getStoreByState", null);
 exports.StoresController = StoresController = __decorate([
     (0, common_1.Controller)('stores'),
-    __metadata("design:paramtypes", [stores_service_1.StoresService, stores_repository_1.StoresRepository])
+    __metadata("design:paramtypes", [stores_service_1.StoresService])
 ], StoresController);
 //# sourceMappingURL=stores.controller.js.map

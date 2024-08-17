@@ -18,7 +18,7 @@ import {Store} from "../models/stores.model";
 
 @Controller('stores')
 export class StoresController {
-    constructor(private storeService: StoresService, private storeRepository: StoresRepository) {}
+    constructor(private storeService: StoresService) {}
     @UseGuards(JwtAuthGuard)
     @HttpCode(HttpStatus.OK)
     @Get("/")
@@ -26,17 +26,17 @@ export class StoresController {
         try {
             let stores: Array<Store>;
             if (locationRadius.lat && locationRadius.long) {
-                stores = await this.storeRepository.findStoreByRadius(locationRadius);
+                stores = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
                 if (stores.length == 0) {
                     return res.status(HttpStatus.BAD_REQUEST).send({
                         message: "Cannot find any store, increase distance"
                     });
                 }
             } else {
-                stores = await this.storeService.storeRepository.findAll();
+                stores = await this.storeService.storeRepository.findAllSTore();
             }
 
-            return res.status(HttpStatus.OK).send({ stores });
+            return res.status(HttpStatus.OK).send(stores);
         } catch (e) {
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
         }
@@ -47,7 +47,7 @@ export class StoresController {
     @Get("/radius")
     async getStoreByLocation(@Query() locationRadius: LocationRadius, @Req() req, @Res() res) {
         try {
-            const result = await this.storeRepository.findStoreByRadius(locationRadius);
+            const result = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
             if (result.length == 0) {
                 return res.status(HttpStatus.BAD_REQUEST).send({
                     message: "Cannot find any store, increase distance"
@@ -65,7 +65,7 @@ export class StoresController {
     @Get("/state")
     async getStoreByState(@Body() countryCode: CountryCode, @Req() req, @Res() res) {
         try {
-            const results = await this.storeRepository.findStoreByCountryCode(countryCode.countryCode);
+            const results = await this.storeService.storeRepository.findStoreByCountryCode(countryCode.countryCode);
 
             if (results.length == 0) {
                 return res.status(HttpStatus.BAD_REQUEST).send({

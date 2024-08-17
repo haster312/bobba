@@ -1,0 +1,349 @@
+[
+  {
+    "stateName": "Alabama",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Alaska",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Arizona",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Arkansas",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "California",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Colorado",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Connecticut",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Delaware",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Florida",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Georgia",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Hawaii",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Idaho",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Illinois",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Indiana",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Iowa",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Kansas",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Kentucky",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Louisiana",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Maine",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Maryland",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Massachusetts",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Michigan",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Minnesota",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Mississippi",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Missouri",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Montana",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Nebraska",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Nevada",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "New Hampshire",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "New Jersey",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "New Mexico",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "New York",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "North Carolina",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "North Dakota",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Ohio",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Oklahoma",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Oregon",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Pennsylvania",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Rhode Island",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "South Carolina",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "South Dakota",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Tennessee",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Texas",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Utah",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Vermont",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Virginia",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Washington",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "West Virginia",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Wisconsin",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Wyoming",
+    "countryName": "United States",
+    "countryCode": "USA"
+  },
+  {
+    "stateName": "Alberta",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "British Columbia",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Manitoba",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "New Brunswick",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Newfoundland and Labrador",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Nova Scotia",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Ontario",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Prince Edward Island",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Quebec",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Saskatchewan",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Northwest Territories",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Nunavut",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+  {
+    "stateName": "Yukon",
+    "countryName": "Canada",
+    "countryCode": "CAN"
+  },
+    { "stateName": "Aguascalientes", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Baja California", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Baja California Sur", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Campeche", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Chiapas", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Chihuahua", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Coahuila", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Colima", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Durango", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Guanajuato", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Guerrero", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Hidalgo", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Jalisco", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Mexico City", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Mexico State", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Michoacán", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Morelos", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Nayarit", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Nuevo León", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Oaxaca", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Puebla", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Querétaro", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Quintana Roo", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "San Luis Potosí", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Sinaloa", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Sonora", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Tabasco", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Tamaulipas", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Tlaxcala", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Veracruz", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Yucatán", "countryName": "Mexico", "countryCode": "MEX" },
+    { "stateName": "Zacatecas", "countryName": "Mexico", "countryCode": "MEX" }
+]

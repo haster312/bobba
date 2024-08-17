@@ -26,7 +26,9 @@ import { HydratedDocument } from "mongoose";
 import { BaseModel } from "./base.model";
 export type StoreDocument = HydratedDocument<Store>;
 export declare class Store extends BaseModel {
-    storeNumber: number;
+    storeNumber: string;
+    fax: string;
+    email: string;
     storeName: string;
     storeAddress: string;
     lat: number;
@@ -38,6 +40,7 @@ export declare class Store extends BaseModel {
     postalCode: string;
     countryCode: string;
     country: string;
+    url: string;
 }
 export declare const StoresModel: import("mongoose").Schema<Store, import("mongoose").Model<Store, any, any, any, import("mongoose").Document<unknown, any, Store> & Store & Required<{
     _id: string;

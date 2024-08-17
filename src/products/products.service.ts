@@ -7,14 +7,13 @@ import {AddonType} from "../models/addon.model";
 import {ProductCategory} from "../models/products.model";
 
 @Injectable()
-export class ProductsService implements OnModuleInit {
+export class ProductsService {
     constructor(
         public productRepository: ProductsRepository,
         public addonRepository: AddonRepository
     ) {
 
     }
-
     async initProduct() {
         const storeBuffer = fs.readFileSync(path.resolve( "./src/data/products.json"));
         if (storeBuffer) {
@@ -25,7 +24,7 @@ export class ProductsService implements OnModuleInit {
         }
     }
 
-    async onModuleInit() {
+    async migrate() {
         for (let value of Object.values(AddonType)) {
             if (typeof value == "string") {
                 const addons = await this.addonRepository.findOneByCondition({ type: value });

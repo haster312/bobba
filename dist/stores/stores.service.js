@@ -15,28 +15,34 @@ const path = require("path");
 const fs = require("fs");
 const stores_repository_1 = require("../repositories/stores.repository");
 const axios_1 = require("axios");
+const store_hour_repository_1 = require("../repositories/store-hour.repository");
+const state_repository_1 = require("../repositories/state.repository");
 let StoresService = class StoresService {
-    constructor(storeRepository) {
+    constructor(storeRepository, storeHourRepository, stateRepository) {
         this.storeRepository = storeRepository;
+        this.storeHourRepository = storeHourRepository;
+        this.stateRepository = stateRepository;
     }
     async initStore() {
         const storeBuffer = fs.readFileSync(path.resolve("./src/data/stores.json"));
         if (storeBuffer) {
             const stores = storeBuffer.toString("utf-8");
             for (let store of JSON.parse(stores)) {
-                const location = await this.loadLocation(store.storeAddress, store.lat, store.long);
-                await this.storeRepository.create({
-                    ...store,
-                    ...location
-                });
+                const storeModel = await this.storeRepository.createStoreData(store);
+                if (storeModel) {
+                    await this.storeHourRepository.createStoreHourData(storeModel, store.hours);
+                }
             }
         }
     }
-    async onModuleInit() {
+    async migrate() {
         const store = await this.storeRepository.findOneByCondition({});
         if (!store) {
             await this.initStore();
-            console.info("Init stores data");
+        }
+        const state = await this.stateRepository.findOneByCondition({});
+        if (!state) {
+            await this.initState();
         }
     }
     async loadLocation(address, lat, long) {
@@ -64,10 +70,27 @@ let StoresService = class StoresService {
         }
         return null;
     }
+    async initState() {
+        const stateBuffer = fs.readFileSync(path.resolve("./src/data/states.json"));
+        if (stateBuffer) {
+            const states = stateBuffer.toString("utf-8");
+            for (const stateInfo of JSON.parse(states)) {
+                await this.stateRepository.createState(stateInfo);
+            }
+        }
+    }
+    async getStateByCountry(countryCode) {
+        if (countryCode) {
+            return this.stateRepository.findByCountryCode(countryCode.toUpperCase());
+        }
+        return this.stateRepository.findAllStates();
+    }
 };
 exports.StoresService = StoresService;
 exports.StoresService = StoresService = __decorate([
     (0, common_1.Injectable)(),
-    __metadata("design:paramtypes", [stores_repository_1.StoresRepository])
+    __metadata("design:paramtypes", [stores_repository_1.StoresRepository,
+        store_hour_repository_1.StoreHourRepository,
+        state_repository_1.StateRepository])
 ], StoresService);
 //# sourceMappingURL=stores.service.js.map

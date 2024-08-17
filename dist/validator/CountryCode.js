@@ -16,6 +16,7 @@ class CountryCode {
 exports.CountryCode = CountryCode;
 __decorate([
     (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], CountryCode.prototype, "countryCode", void 0);
 //# sourceMappingURL=CountryCode.js.map

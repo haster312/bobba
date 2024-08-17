@@ -1,9 +1,14 @@
-import { OnModuleInit } from '@nestjs/common';
 import { StoresRepository } from "../repositories/stores.repository";
-export declare class StoresService implements OnModuleInit {
+import { StoreHourRepository } from "../repositories/store-hour.repository";
+import { StateRepository } from "../repositories/state.repository";
+export declare class StoresService {
     storeRepository: StoresRepository;
-    constructor(storeRepository: StoresRepository);
+    storeHourRepository: StoreHourRepository;
+    stateRepository: StateRepository;
+    constructor(storeRepository: StoresRepository, storeHourRepository: StoreHourRepository, stateRepository: StateRepository);
     initStore(): Promise<void>;
-    onModuleInit(): Promise<void>;
+    migrate(): Promise<void>;
     loadLocation(address: string, lat: number, long: number): Promise<Object>;
+    initState(): Promise<void>;
+    getStateByCountry(countryCode: string | null): Promise<import("../models/state.model").State[]>;
 }

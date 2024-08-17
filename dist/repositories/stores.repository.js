@@ -23,6 +23,9 @@ let StoresRepository = class StoresRepository extends base_repository_1.BaseRepo
         super(storeRepository);
         this.storeRepository = storeRepository;
     }
+    async findAllSTore() {
+        return this.model.find().populate('hours').exec();
+    }
     async findStoreByRadius({ lat, long, distance }) {
         return this.model.find({
             geometry: {
@@ -31,12 +34,35 @@ let StoresRepository = class StoresRepository extends base_repository_1.BaseRepo
                     $maxDistance: distance * 1000
                 }
             }
-        });
+        }).populate('hours').exec();
     }
     async findStoreByCountryCode(countryCode) {
         return this.model.find({
             countryCode: countryCode
-        }).sort({ stateName: 1 }).exec();
+        }).populate('hours').sort({ stateName: 1 }).exec();
+    }
+    async createStoreData(storeData) {
+        return this.create({
+            storeNumber: parseInt(storeData.id, 10),
+            storeName: storeData.store,
+            storeAddress: storeData.address,
+            city: storeData.city,
+            state: storeData.state,
+            postalCode: parseInt(storeData.zip),
+            countryCode: storeData.countryCode,
+            lat: parseFloat(storeData.lat),
+            long: parseFloat(storeData.lng),
+            country: storeData.country,
+            phone: storeData.phone,
+            fax: storeData.fax,
+            email: storeData.email,
+            hours: storeData.hours,
+            url: storeData.url,
+            geometry: {
+                type: 'Point',
+                coordinates: [parseFloat(storeData.lng), parseFloat(storeData.lat)],
+            },
+        });
     }
 };
 exports.StoresRepository = StoresRepository;

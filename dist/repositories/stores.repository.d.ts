@@ -29,6 +29,10 @@ import { LocationRadius } from "../validator/LocationRadius";
 export declare class StoresRepository extends BaseRepository<Store> {
     private storeRepository;
     constructor(storeRepository: Model<Store>);
+    findAllSTore(): Promise<Omit<import("mongoose").Document<unknown, {}, Store> & Store & Required<{
+        _id: string;
+    }>, never>[]>;
     findStoreByRadius({ lat, long, distance }: LocationRadius): Promise<Store[]>;
     findStoreByCountryCode(countryCode: string): Promise<Store[]>;
+    createStoreData(storeData: any): Promise<Store>;
 }

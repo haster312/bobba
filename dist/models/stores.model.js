@@ -17,8 +17,16 @@ let Store = class Store extends base_model_1.BaseModel {
 exports.Store = Store;
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], Store.prototype, "storeNumber", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Store.prototype, "fax", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Store.prototype, "email", void 0);
 __decorate([
     (0, mongoose_1.Prop)({ required: true }),
     __metadata("design:type", String)
@@ -63,6 +71,10 @@ __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", String)
 ], Store.prototype, "country", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
+], Store.prototype, "url", void 0);
 exports.Store = Store = __decorate([
     (0, mongoose_1.Schema)({
         timestamps: {
@@ -73,4 +85,11 @@ exports.Store = Store = __decorate([
     })
 ], Store);
 exports.StoresModel = mongoose_1.SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });
+exports.StoresModel.virtual('hours', {
+    ref: 'StoreHour',
+    localField: '_id',
+    foreignField: 'storeId',
+});
+exports.StoresModel.set('toObject', { virtuals: true });
+exports.StoresModel.set('toJSON', { virtuals: true });
 //# sourceMappingURL=stores.model.js.map

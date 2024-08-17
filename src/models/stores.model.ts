@@ -18,7 +18,13 @@ interface Geometry {
 
 export class Store extends BaseModel {
     @Prop({ required: true })
-    storeNumber: number;
+    storeNumber: string;
+
+    @Prop()
+    fax: string;
+
+    @Prop()
+    email: string;
 
     @Prop({ required: true })
     storeName: string;
@@ -52,6 +58,18 @@ export class Store extends BaseModel {
 
     @Prop()
     country: string;
+
+    @Prop()
+    url: string;
 }
 
 export const StoresModel = SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });
+
+StoresModel.virtual('hours', {
+    ref: 'StoreHour',
+    localField: '_id', // Find storeHours where `localField` is equal to `foreignField`
+    foreignField: 'storeId',
+});
+
+StoresModel.set('toObject', { virtuals: true });
+StoresModel.set('toJSON', { virtuals: true });

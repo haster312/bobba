@@ -5,5 +5,6 @@ declare const _default: () => {
     TWILIO_ACCOUNT_SID: string;
     TWILIO_AUTH_TOKEN: string;
     TWILIO_PHONE_NUMBER: string;
+    API_KEY: string;
 };
 export default _default;
