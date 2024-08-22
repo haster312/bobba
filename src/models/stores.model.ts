@@ -64,6 +64,7 @@ export class Store extends BaseModel {
 }
 
 export const StoresModel = SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });
+StoresModel.index({ geometry: "2dsphere" });
 
 StoresModel.virtual('hours', {
     ref: 'StoreHour',

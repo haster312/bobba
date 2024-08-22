@@ -85,6 +85,7 @@ exports.Store = Store = __decorate([
     })
 ], Store);
 exports.StoresModel = mongoose_1.SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });
+exports.StoresModel.index({ geometry: "2dsphere" });
 exports.StoresModel.virtual('hours', {
     ref: 'StoreHour',
     localField: '_id',
