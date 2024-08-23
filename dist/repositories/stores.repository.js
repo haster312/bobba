@@ -26,12 +26,12 @@ let StoresRepository = class StoresRepository extends base_repository_1.BaseRepo
     async findAllSTore() {
         return this.model.find().populate('hours').exec();
     }
-    async findStoreByRadius({ lat, long, distance }) {
+    async findStoreByRadius({ lat, long, radius = 5 }) {
         return this.model.find({
             geometry: {
                 $near: {
                     $geometry: { type: "Point", coordinates: [long, lat] },
-                    $maxDistance: distance * 1000
+                    $maxDistance: radius * 1000
                 }
             }
         }).populate('hours').exec();

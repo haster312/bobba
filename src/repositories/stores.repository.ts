@@ -18,12 +18,12 @@ export class StoresRepository extends BaseRepository<Store> {
 		return this.model.find().populate('hours').exec();
 	}
 
-	async findStoreByRadius({ lat, long, distance }: LocationRadius): Promise<Store[]>{
+	async findStoreByRadius({ lat, long, radius = 5 }: LocationRadius): Promise<Store[]>{
 		return this.model.find({
 			geometry: {
 				$near: {
 					$geometry: { type: "Point",  coordinates: [ long, lat ] },
-					$maxDistance: distance * 1000
+					$maxDistance: radius * 1000
 				}
 			}
 		}).populate('hours').exec();
