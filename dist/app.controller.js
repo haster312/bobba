@@ -28,8 +28,13 @@ let AppController = class AppController {
         return this.appService.getHello();
     }
     async migrationData(req, res) {
-        await this.storeService.migrate();
-        await this.productService.migrate();
+        if (req.body.onlyStore) {
+            await this.storeService.insertStoreByJson();
+        }
+        else {
+            await this.storeService.migrate();
+            await this.productService.migrate();
+        }
         return res.status(200).json({ success: true });
     }
 };

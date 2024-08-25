@@ -77,6 +77,18 @@ let StoresService = class StoresService {
             }
         }
     }
+    async insertStoreByJson() {
+        const stateBuffer = fs.readFileSync(path.resolve("./src/data/bobba.stores.json"));
+        if (stateBuffer) {
+            const stores = stateBuffer.toString("utf-8");
+            for (const store of JSON.parse(stores)) {
+                delete store._id;
+                delete store.createdAt;
+                delete store.updatedAt;
+                await this.storeRepository.create(store);
+            }
+        }
+    }
     async getStateByCountry(countryCode) {
         if (countryCode) {
             return this.stateRepository.findByCountryCode(countryCode.toUpperCase());

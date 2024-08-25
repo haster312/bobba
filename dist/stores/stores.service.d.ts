@@ -10,5 +10,6 @@ export declare class StoresService {
     migrate(): Promise<void>;
     loadLocation(address: string, lat: number, long: number): Promise<Object>;
     initState(): Promise<void>;
+    insertStoreByJson(): Promise<void>;
     getStateByCountry(countryCode: string | null): Promise<import("../models/state.model").State[]>;
 }

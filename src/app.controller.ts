@@ -20,8 +20,12 @@ export class AppController {
     @UseGuards(ApiKeyGuard)
     @Post('/migration')
     async migrationData(@Request() req, @Response() res) {
-        await this.storeService.migrate();
-        await this.productService.migrate();
+        if (req.body.onlyStore) {
+            await this.storeService.insertStoreByJson();
+        } else {
+            await this.storeService.migrate();
+            await this.productService.migrate();
+        }
 
         return res.status(200).json({ success: true });
     }

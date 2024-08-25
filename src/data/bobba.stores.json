@@ -1,0 +1,1600 @@
+[{
+  "_id": {
+    "$oid": "66cb53c8af97cd5c29e4e13d"
+  },
+  "storeNumber": "3042",
+  "fax": "",
+  "email": "",
+  "storeName": "Hawthorne",
+  "storeAddress": "1080 SE Madison St.",
+  "lat": 45.512795,
+  "long": -122.657062,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.657062,
+      45.512795
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97214",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/hawthorne/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:48.256Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:48.256Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53c8af97cd5c29e4e14d"
+  },
+  "storeNumber": "5513",
+  "fax": "",
+  "email": "",
+  "storeName": "Glisan",
+  "storeAddress": "2810 NE Glisan St",
+  "lat": 45.526324,
+  "long": -122.639541,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.639541,
+      45.526324
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97232",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/glisan",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:48.985Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:48.985Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53c9af97cd5c29e4e15d"
+  },
+  "storeNumber": "3327",
+  "fax": "",
+  "email": "",
+  "storeName": "Powell",
+  "storeAddress": "3582 SE Powell Blvd.",
+  "lat": 45.49648,
+  "long": -122.62715,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.62715,
+      45.49648
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97202",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/powell/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:49.693Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:49.693Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53caaf97cd5c29e4e16d"
+  },
+  "storeNumber": "3040",
+  "fax": "",
+  "email": "",
+  "storeName": "Sellwood",
+  "storeAddress": "7875 SE 13th Ave.",
+  "lat": 45.467483,
+  "long": -122.655467,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.655467,
+      45.467483
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97202",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/sellwood2/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:50.560Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:50.560Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53cbaf97cd5c29e4e17d"
+  },
+  "storeNumber": "3925",
+  "fax": "",
+  "email": "",
+  "storeName": "Davis",
+  "storeAddress": "8220 NE Davis St.",
+  "lat": 45.524437,
+  "long": -122.581028,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.581028,
+      45.524437
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97220",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/davis",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:51.334Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:51.334Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ccaf97cd5c29e4e18d"
+  },
+  "storeNumber": "4141",
+  "fax": "",
+  "email": "",
+  "storeName": "MLK",
+  "storeAddress": "7339 NE Martin Luther King Jr Blvd.",
+  "lat": 45.576323,
+  "long": -122.663932,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.663932,
+      45.576323
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97211",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/mlk/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:52.101Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:52.101Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ccaf97cd5c29e4e19d"
+  },
+  "storeNumber": "3013",
+  "fax": "",
+  "email": "",
+  "storeName": "Cartlandia",
+  "storeAddress": "8145 SE 82nd Ave",
+  "lat": 45.463538,
+  "long": -122.579512,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.579512,
+      45.463538
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97266",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/cartlandia/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:52.811Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:52.811Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53cdaf97cd5c29e4e1ad"
+  },
+  "storeNumber": "5344",
+  "fax": "",
+  "email": "",
+  "storeName": "Tigard 3",
+  "storeAddress": "9770 SW Shady Ln",
+  "lat": 45.441834,
+  "long": -122.779631,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.779631,
+      45.441834
+    ]
+  },
+  "city": "Tigard",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97223",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/tigard3",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:53.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:53.524Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ceaf97cd5c29e4e1bd"
+  },
+  "storeNumber": "3868",
+  "fax": "",
+  "email": "",
+  "storeName": "Stark",
+  "storeAddress": "14465 SE Stark St.",
+  "lat": 45.519156,
+  "long": -122.514814,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.514814,
+      45.519156
+    ]
+  },
+  "city": "Portland",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97233",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/stark/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:54.256Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:54.256Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ceaf97cd5c29e4e1cd"
+  },
+  "storeNumber": "3022",
+  "fax": "",
+  "email": "",
+  "storeName": "Aloha",
+  "storeAddress": "18687 SW Tualatin Valley Hwy",
+  "lat": 45.494907,
+  "long": -122.869483,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.869483,
+      45.494907
+    ]
+  },
+  "city": "Beaverton",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97006",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/aloha/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:54.963Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:54.963Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53cfaf97cd5c29e4e1dd"
+  },
+  "storeNumber": "3038",
+  "fax": "",
+  "email": "",
+  "storeName": "Happy Valley",
+  "storeAddress": "13551 SE 146th Ave.",
+  "lat": 45.424474,
+  "long": -122.515319,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.515319,
+      45.424474
+    ]
+  },
+  "city": "Happy Valley",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97015",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/happyvalley/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:55.858Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:55.858Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d0af97cd5c29e4e1ed"
+  },
+  "storeNumber": "4472",
+  "fax": "",
+  "email": "",
+  "storeName": "Aloha 2",
+  "storeAddress": "20001 SW Tualatin Valley Highway",
+  "lat": 45.495869,
+  "long": -122.884964,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.884964,
+      45.495869
+    ]
+  },
+  "city": "Beaverton",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97003",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/aloha2",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:56.557Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:56.557Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d1af97cd5c29e4e1fd"
+  },
+  "storeNumber": "4223",
+  "fax": "",
+  "email": "",
+  "storeName": "Oregon City",
+  "storeAddress": "1401 Washington St.",
+  "lat": 45.361714,
+  "long": -122.602333,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.602333,
+      45.361714
+    ]
+  },
+  "city": "Oregon City",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97045",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/oregoncity",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:57.345Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:57.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d2af97cd5c29e4e20d"
+  },
+  "storeNumber": "4433",
+  "fax": "",
+  "email": "",
+  "storeName": "Fairview",
+  "storeAddress": "22320 NE Halsey St.",
+  "lat": 45.534886,
+  "long": -122.435134,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.435134,
+      45.534886
+    ]
+  },
+  "city": "Fairview",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97024",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/fairview/",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:58.094Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:58.094Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d3af97cd5c29e4e21d"
+  },
+  "storeNumber": "5319",
+  "fax": "",
+  "email": "",
+  "storeName": "Camas",
+  "storeAddress": "5900 NW Friberg-Strunk St.",
+  "lat": 45.628763,
+  "long": -122.46827,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.46827,
+      45.628763
+    ]
+  },
+  "city": "Camas",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98607",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/camas",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:59.125Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:59.125Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d3af97cd5c29e4e22d"
+  },
+  "storeNumber": "3937",
+  "fax": "",
+  "email": "",
+  "storeName": "East Vancouver",
+  "storeAddress": "13510 NE Fourth Plain Blvd.",
+  "lat": 45.672632,
+  "long": -122.535701,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.535701,
+      45.672632
+    ]
+  },
+  "city": "Vancouver",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98682",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/eastvancouver",
+  "createdAt": {
+    "$date": "2024-08-25T15:54:59.884Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:54:59.884Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d4af97cd5c29e4e23d"
+  },
+  "storeNumber": "4227",
+  "fax": "",
+  "email": "",
+  "storeName": "Troutdale",
+  "storeAddress": "151 SW 257th Dr.",
+  "lat": 45.536913,
+  "long": -122.397781,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.397781,
+      45.536913
+    ]
+  },
+  "city": "Troutdale",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97060",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/troutdale",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:00.672Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:00.672Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d5af97cd5c29e4e24d"
+  },
+  "storeNumber": "4763",
+  "fax": "",
+  "email": "",
+  "storeName": "Hillsboro 2",
+  "storeAddress": "320 SE Baseline St.",
+  "lat": 45.520168,
+  "long": -122.985576,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.985576,
+      45.520168
+    ]
+  },
+  "city": "Hillsboro",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97123",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/hillsboro2",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:01.416Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:01.416Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d6af97cd5c29e4e25d"
+  },
+  "storeNumber": "3329",
+  "fax": "",
+  "email": "",
+  "storeName": "Forest Grove",
+  "storeAddress": "2131 Yew St.",
+  "lat": 45.521492,
+  "long": -123.074725,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.074725,
+      45.521492
+    ]
+  },
+  "city": "Forest Grove",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97116",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/forestgrove/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:02.181Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:02.181Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d6af97cd5c29e4e26d"
+  },
+  "storeNumber": "5370",
+  "fax": "",
+  "email": "",
+  "storeName": "Scappoose",
+  "storeAddress": "51875 SW Old Portland Rd",
+  "lat": 45.748264,
+  "long": -122.880595,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.880595,
+      45.748264
+    ]
+  },
+  "city": "Scappoose",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97056",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/scappoose",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:02.898Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:02.898Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d7af97cd5c29e4e27d"
+  },
+  "storeNumber": "3030",
+  "fax": "",
+  "email": "",
+  "storeName": "Newberg",
+  "storeAddress": "910 E 1st Street",
+  "lat": 45.30005,
+  "long": -122.96999,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.96999,
+      45.30005
+    ]
+  },
+  "city": "Newberg",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97132",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/newberg/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:03.780Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:03.780Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d9af97cd5c29e4e28d"
+  },
+  "storeNumber": "5329",
+  "fax": "",
+  "email": "",
+  "storeName": "Battle Ground",
+  "storeAddress": "106 East Main St.",
+  "lat": 45.781031,
+  "long": -122.539761,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.539761,
+      45.781031
+    ]
+  },
+  "city": "Battle Ground",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98604",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/battleground",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:05.306Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:05.306Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53d9af97cd5c29e4e29d"
+  },
+  "storeNumber": "3034",
+  "fax": "",
+  "email": "",
+  "storeName": "Sandy",
+  "storeAddress": "38424 Pioneer Blvd.",
+  "lat": 45.39666,
+  "long": -122.26816,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.26816,
+      45.39666
+    ]
+  },
+  "city": "Sandy",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97055",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/sandy/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:05.983Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:05.983Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53daaf97cd5c29e4e2ad"
+  },
+  "storeNumber": "3872",
+  "fax": "",
+  "email": "",
+  "storeName": "Estacada",
+  "storeAddress": "380 SW Zobrist St.",
+  "lat": 45.286927,
+  "long": -122.33851,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.33851,
+      45.286927
+    ]
+  },
+  "city": "Estacada",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97023",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/estacada/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:06.725Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:06.725Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53dcaf97cd5c29e4e2bd"
+  },
+  "storeNumber": "4624",
+  "fax": "",
+  "email": "",
+  "storeName": "St Helens",
+  "storeAddress": "175 Bowling Alley Ln",
+  "lat": 45.850699,
+  "long": -122.833888,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.833888,
+      45.850699
+    ]
+  },
+  "city": "St Helens",
+  "state": "TN",
+  "stateName": "Tennessee",
+  "postalCode": "97051",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/sthelens",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:08.158Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:08.158Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53dcaf97cd5c29e4e2cd"
+  },
+  "storeNumber": "4623",
+  "fax": "",
+  "email": "",
+  "storeName": "Molalla",
+  "storeAddress": "102 N Molalla Ave",
+  "lat": 45.147766,
+  "long": -122.579517,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.579517,
+      45.147766
+    ]
+  },
+  "city": "Molalla",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97038",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/molalla",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:08.893Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:08.893Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ddaf97cd5c29e4e2dd"
+  },
+  "storeNumber": "4213",
+  "fax": "",
+  "email": "",
+  "storeName": "Woodburn 3",
+  "storeAddress": "1600 Industrial Ave.",
+  "lat": 45.155534,
+  "long": -122.830162,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.830162,
+      45.155534
+    ]
+  },
+  "city": "Woodburn",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97071",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/woodburn3",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:09.673Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:09.673Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53deaf97cd5c29e4e2ed"
+  },
+  "storeNumber": "3941",
+  "fax": "",
+  "email": "",
+  "storeName": "McMinnville",
+  "storeAddress": "540 OR-99W",
+  "lat": 45.223509,
+  "long": -123.195696,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.195696,
+      45.223509
+    ]
+  },
+  "city": "McMinnville",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97128",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/mcminnville",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:10.407Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:10.407Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53dfaf97cd5c29e4e2fd"
+  },
+  "storeNumber": "4225",
+  "fax": "",
+  "email": "",
+  "storeName": "Silverton",
+  "storeAddress": "311 N Water St.",
+  "lat": 45.006592,
+  "long": -122.786587,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.786587,
+      45.006592
+    ]
+  },
+  "city": "Silverton",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97381",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/silverton",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:11.276Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:11.276Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e0af97cd5c29e4e30d"
+  },
+  "storeNumber": "4217",
+  "fax": "",
+  "email": "",
+  "storeName": "North Salem",
+  "storeAddress": "3995 Silverton Rd NE",
+  "lat": 44.969623,
+  "long": -122.986168,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.986168,
+      44.969623
+    ]
+  },
+  "city": "Salem",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97305",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/northsalem",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:12.006Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:12.006Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e0af97cd5c29e4e31d"
+  },
+  "storeNumber": "4722",
+  "fax": "",
+  "email": "",
+  "storeName": "West Salem",
+  "storeAddress": "1233 River Bend Rd Nw",
+  "lat": 44.966976,
+  "long": -123.050689,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.050689,
+      44.966976
+    ]
+  },
+  "city": "Salem",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97304",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/westsalem",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:12.982Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:12.982Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e1af97cd5c29e4e32d"
+  },
+  "storeNumber": "3026",
+  "fax": "",
+  "email": "",
+  "storeName": "The Yard Food Park",
+  "storeAddress": "4106 SE State St.",
+  "lat": 44.9274,
+  "long": -122.98049,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.98049,
+      44.9274
+    ]
+  },
+  "city": "Salem",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "97301",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/theyard/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:13.864Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:13.864Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e2af97cd5c29e4e33d"
+  },
+  "storeNumber": "4221",
+  "fax": "",
+  "email": "",
+  "storeName": "Boardman",
+  "storeAddress": "103 SE Front St.",
+  "lat": 44.940793,
+  "long": -123.044534,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.044534,
+      44.940793
+    ]
+  },
+  "city": "Boardman",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97818",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/boardman",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:14.621Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:14.621Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e3af97cd5c29e4e34d"
+  },
+  "storeNumber": "5326",
+  "fax": "",
+  "email": "",
+  "storeName": "Longview 3",
+  "storeAddress": "1600 Maple Street",
+  "lat": 46.14153,
+  "long": -122.940069,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.940069,
+      46.14153
+    ]
+  },
+  "city": "Longview",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98632",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/longview3/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:15.510Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:15.510Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e4af97cd5c29e4e35d"
+  },
+  "storeNumber": "3024",
+  "fax": "",
+  "email": "",
+  "storeName": "Beehive",
+  "storeAddress": "5669 Commercial St SE",
+  "lat": 44.87225,
+  "long": -123.02526,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.02526,
+      44.87225
+    ]
+  },
+  "city": "Salem",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97306",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/beehive/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:16.228Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:16.228Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e5af97cd5c29e4e36d"
+  },
+  "storeNumber": "4795",
+  "fax": "",
+  "email": "",
+  "storeName": "Dallas",
+  "storeAddress": "995 Main Street",
+  "lat": 44.919627,
+  "long": -123.319296,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.319296,
+      44.919627
+    ]
+  },
+  "city": "Dallas",
+  "state": "IL",
+  "stateName": "Illinois",
+  "postalCode": "97338",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/dallas",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:17.087Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:17.087Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e5af97cd5c29e4e37d"
+  },
+  "storeNumber": "4443",
+  "fax": "",
+  "email": "",
+  "storeName": "Independence",
+  "storeAddress": "240 Monmouth St.",
+  "lat": 44.851413,
+  "long": -123.188668,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.188668,
+      44.851413
+    ]
+  },
+  "city": "Independence",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97351",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/independence/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:17.952Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:17.952Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e6af97cd5c29e4e38d"
+  },
+  "storeNumber": "4882",
+  "fax": "",
+  "email": "",
+  "storeName": "Tillamook",
+  "storeAddress": "1816 1st St.",
+  "lat": 45.457953,
+  "long": -123.847963,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.847963,
+      45.457953
+    ]
+  },
+  "city": "Tillamook",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97141",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/tillamook",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:18.726Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:18.726Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e7af97cd5c29e4e39d"
+  },
+  "storeNumber": "5295",
+  "fax": "",
+  "email": "",
+  "storeName": "Albany 2",
+  "storeAddress": "325 Airport Rd SE",
+  "lat": 44.641734,
+  "long": -123.066272,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.066272,
+      44.641734
+    ]
+  },
+  "city": "Albany",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97322",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/albany2",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:19.443Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:19.443Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e8af97cd5c29e4e3ad"
+  },
+  "storeNumber": "4219",
+  "fax": "",
+  "email": "",
+  "storeName": "Lebanon",
+  "storeAddress": "2055 Primrose St.",
+  "lat": 44.526522,
+  "long": -122.907202,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.907202,
+      44.526522
+    ]
+  },
+  "city": "Lebanon",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97355",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/lebanon",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:20.248Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:20.248Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e9af97cd5c29e4e3bd"
+  },
+  "storeNumber": "3923",
+  "fax": "",
+  "email": "",
+  "storeName": "The Dalles",
+  "storeAddress": "2638 W 6th St.",
+  "lat": 45.616712,
+  "long": -121.213018,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -121.213018,
+      45.616712
+    ]
+  },
+  "city": "The Dalles",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97058",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/thedalles",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:21.036Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:21.036Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53e9af97cd5c29e4e3cd"
+  },
+  "storeNumber": "5151",
+  "fax": "",
+  "email": "",
+  "storeName": "Astoria",
+  "storeAddress": "385 11th St",
+  "lat": 46.188467,
+  "long": -123.83447,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.83447,
+      46.188467
+    ]
+  },
+  "city": "Astoria",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97103",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/astoria",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:21.857Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:21.857Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53eaaf97cd5c29e4e3dd"
+  },
+  "storeNumber": "3959",
+  "fax": "",
+  "email": "",
+  "storeName": "Lincoln City",
+  "storeAddress": "5040 SW Highway 101",
+  "lat": 45.234275,
+  "long": -124.414221,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -124.414221,
+      45.234275
+    ]
+  },
+  "city": "Lincoln City",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97367",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/lincoln/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:22.632Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:22.632Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ebaf97cd5c29e4e3ed"
+  },
+  "storeNumber": "4439",
+  "fax": "",
+  "email": "",
+  "storeName": "Madras",
+  "storeAddress": "130 SW 5th St.",
+  "lat": 44.634258,
+  "long": -121.132044,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -121.132044,
+      44.634258
+    ]
+  },
+  "city": "Madras",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97741",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/madras/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:23.623Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:23.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53ecaf97cd5c29e4e3fd"
+  },
+  "storeNumber": "3755",
+  "fax": "",
+  "email": "",
+  "storeName": "Eugene",
+  "storeAddress": "4190 Barger Dr.",
+  "lat": 44.084204,
+  "long": -123.170004,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.170004,
+      44.084204
+    ]
+  },
+  "city": "Eugene",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97402",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/eugene/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:24.311Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:24.311Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53edaf97cd5c29e4e40d"
+  },
+  "storeNumber": "4215",
+  "fax": "",
+  "email": "",
+  "storeName": "Crooked River Ranch",
+  "storeAddress": "13959 SW Commercial Loop Rd.",
+  "lat": 44.438396,
+  "long": -121.254643,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -121.254643,
+      44.438396
+    ]
+  },
+  "city": "Crooked River Ranch",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97760",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://www.bobablastic.com/crookedriver",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:25.203Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:25.203Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53edaf97cd5c29e4e40f"
+  },
+  "storeNumber": "4857",
+  "fax": "",
+  "email": "",
+  "storeName": "Veneta",
+  "storeAddress": "24979 E Broadway Ave",
+  "lat": 44.051502,
+  "long": -123.356815,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -123.356815,
+      44.051502
+    ]
+  },
+  "city": "Veneta",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97487",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/veneta/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:25.951Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:25.951Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53eeaf97cd5c29e4e41f"
+  },
+  "storeNumber": "4432",
+  "fax": "",
+  "email": "",
+  "storeName": "Lacey",
+  "storeAddress": "5700 Lacey Blvd.",
+  "lat": 47.036413,
+  "long": -122.811529,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.811529,
+      47.036413
+    ]
+  },
+  "city": "Lacey",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98503",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/lacey/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:26.634Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:26.634Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53efaf97cd5c29e4e42f"
+  },
+  "storeNumber": "4440",
+  "fax": "",
+  "email": "",
+  "storeName": "Olympia",
+  "storeAddress": "135 Cushing St NW.",
+  "lat": 47.045398,
+  "long": -122.927307,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -122.927307,
+      47.045398
+    ]
+  },
+  "city": "Olympia",
+  "state": "WA",
+  "stateName": "Washington",
+  "postalCode": "98502",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/olympia/",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:27.361Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:27.361Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66cb53f0af97cd5c29e4e43f"
+  },
+  "storeNumber": "5181",
+  "fax": "",
+  "email": "",
+  "storeName": "Redmond",
+  "storeAddress": "122 SW 5th Street",
+  "lat": 44.276071,
+  "long": -121.175565,
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -121.175565,
+      44.276071
+    ]
+  },
+  "city": "Redmond",
+  "state": "OR",
+  "stateName": "Oregon",
+  "postalCode": "97756",
+  "countryCode": "US",
+  "country": "United States",
+  "url": "https://bobablastic.com/redmond",
+  "createdAt": {
+    "$date": "2024-08-25T15:55:28.134Z"
+  },
+  "updatedAt": {
+    "$date": "2024-08-25T15:55:28.134Z"
+  }
+}]
