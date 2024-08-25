@@ -18,15 +18,39 @@ export class StoresRepository extends BaseRepository<Store> {
 		return this.model.find().populate('hours').exec();
 	}
 
-	async findStoreByRadius({ lat, long, radius = 5 }: LocationRadius): Promise<Store[]>{
-		return this.model.find({
-			geometry: {
-				$near: {
-					$geometry: { type: "Point",  coordinates: [ long, lat ] },
-					$maxDistance: radius * 1000
-				}
-			}
-		}).populate('hours').exec();
+	async findStoreByRadius({ lat, long, radius = 5, state = null, page, limit = 10}: LocationRadius): Promise<{ results: Store[], total: number, pages: number}>{
+		let query: Record<string, any> = {
+			stateName: state,
+		};
+
+		if (lat !== undefined && long !== undefined) {
+			const earthRadiusInMeters = 6378100;
+			const radiusInRadians = (radius * 1000) / earthRadiusInMeters;
+
+			query.geometry = {
+				$geoWithin: {
+					$centerSphere: [[long, lat], radiusInRadians],
+				},
+			};
+		}
+
+		// Fetch paginated results
+		const results = await this.model
+			.find(query)
+			.skip((page - 1) * limit)
+			.limit(limit)
+			.populate('hours')
+			.exec();
+
+		// Count total documents
+		const total = await this.model.countDocuments(query);
+		const pages = Math.ceil(total / limit);
+
+		return {
+			results,
+			total,
+			pages,
+		};
 	}
 
 	async findStoreByCountryCode(countryCode: string): Promise<Store[]> {
@@ -41,12 +65,13 @@ export class StoresRepository extends BaseRepository<Store> {
 			storeName: storeData.store,
 			storeAddress: storeData.address,
 			city: storeData.city,
-			state: storeData.state,
-			postalCode: parseInt(storeData.zip),
 			countryCode: storeData.countryCode,
+			country: storeData.country,
+			state: storeData.state,
+			stateName: storeData.stateName,
+			postalCode: parseInt(storeData.zip),
 			lat: parseFloat(storeData.lat),
 			long: parseFloat(storeData.lng),
-			country: storeData.country,
 			phone: storeData.phone,
 			fax: storeData.fax,
 			email: storeData.email,

@@ -26,8 +26,8 @@ export class StoresController {
         try {
             let stores: Array<Store>;
             if (locationRadius.lat && locationRadius.long) {
-                stores = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
-                if (stores.length == 0) {
+                const { results } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
+                if (results.length == 0) {
                     return res.status(HttpStatus.BAD_REQUEST).send({
                         message: "Cannot find any store, increase distance"
                     });
@@ -47,14 +47,14 @@ export class StoresController {
     @Get("/radius")
     async getStoreByLocation(@Query() locationRadius: LocationRadius, @Req() req, @Res() res) {
         try {
-            const result = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
-            if (result.length == 0) {
-                return res.status(HttpStatus.BAD_REQUEST).send({
-                    message: "Cannot find any store, increase distance"
-                });
-            }
+            const { results, total, pages } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
 
-            return res.status(HttpStatus.OK).send(result);
+            return res.status(HttpStatus.OK).json({
+                items: results,
+                page: locationRadius.page,
+                total,
+                pages,
+            });
         } catch (e) {
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
         }

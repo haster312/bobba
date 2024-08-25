@@ -26,8 +26,8 @@ let StoresController = class StoresController {
         try {
             let stores;
             if (locationRadius.lat && locationRadius.long) {
-                stores = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
-                if (stores.length == 0) {
+                const { results } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
+                if (results.length == 0) {
                     return res.status(common_1.HttpStatus.BAD_REQUEST).send({
                         message: "Cannot find any store, increase distance"
                     });
@@ -44,13 +44,13 @@ let StoresController = class StoresController {
     }
     async getStoreByLocation(locationRadius, req, res) {
         try {
-            const result = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
-            if (result.length == 0) {
-                return res.status(common_1.HttpStatus.BAD_REQUEST).send({
-                    message: "Cannot find any store, increase distance"
-                });
-            }
-            return res.status(common_1.HttpStatus.OK).send(result);
+            const { results, total, pages } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
+            return res.status(common_1.HttpStatus.OK).json({
+                items: results,
+                page: locationRadius.page,
+                total,
+                pages,
+            });
         }
         catch (e) {
             return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });

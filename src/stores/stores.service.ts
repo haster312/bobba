@@ -20,6 +20,10 @@ export class StoresService {
         if (storeBuffer) {
             const stores = storeBuffer.toString("utf-8");
             for (let store of JSON.parse(stores)) {
+                const locationInfo = await this.loadLocation(store.address, store.lat, store.lng);
+                if (locationInfo) {
+                    store = { ...store, ...locationInfo };
+                }
                 const storeModel = await this.storeRepository.createStoreData(store);
                 if (storeModel) {
                     await this.storeHourRepository.createStoreHourData(storeModel, store.hours);
@@ -56,16 +60,10 @@ export class StoresService {
 
             const address = storeData[0].address;
             return {
-                postalCode: address.postalCode,
                 countryCode: address.countryCode,
                 country: address.country,
-                city: address.municipality,
                 state: address.countrySubdivision,
                 stateName: address.countrySubdivisionName,
-                geometry: {
-                    type: "Point",
-                    coordinates: [long, lat]
-                }
             }
         }
 
