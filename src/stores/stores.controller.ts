@@ -7,7 +7,7 @@ import {
     Req,
     Get,
     UseGuards,
-    Query,
+    Query, Param,
 } from "@nestjs/common";
 import { JwtAuthGuard } from "../auth/jwt-auth-guard";
 import { StoresService } from "./stores.service";
@@ -84,6 +84,23 @@ export class StoresController {
             });
 
             return res.status(HttpStatus.OK).send(stores);
+        } catch (e) {
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
+
+    @UseGuards(JwtAuthGuard)
+    @HttpCode(HttpStatus.OK)
+    @Get("/detail/:id")
+    async getStoreDetail(@Param() param: {id: string }, @Req() req, @Res() res) {
+        try {
+            const { id } = param;
+            const result = await this.storeService.storeRepository.findStoreWithId(id);
+            if (!result) {
+                res.status(HttpStatus.NOT_FOUND).send({ message: "Not found"});
+            }
+
+            return res.status(HttpStatus.OK).send(result);
         } catch (e) {
             return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
         }

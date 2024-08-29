@@ -7,4 +7,7 @@ export declare class StoresController {
     getAllStores(locationRadius: LocationRadius, req: any, res: any): Promise<any>;
     getStoreByLocation(locationRadius: LocationRadius, req: any, res: any): Promise<any>;
     getStoreByState(countryCode: CountryCode, req: any, res: any): Promise<any>;
+    getStoreDetail(param: {
+        id: string;
+    }, req: any, res: any): Promise<any>;
 }

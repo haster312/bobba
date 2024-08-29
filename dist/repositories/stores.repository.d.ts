@@ -39,4 +39,5 @@ export declare class StoresRepository extends BaseRepository<Store> {
     }>;
     findStoreByCountryCode(countryCode: string): Promise<Store[]>;
     createStoreData(storeData: any): Promise<Store>;
+    findStoreWithId(id: any): Promise<Store>;
 }

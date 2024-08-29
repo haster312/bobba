@@ -82,6 +82,11 @@ let StoresRepository = class StoresRepository extends base_repository_1.BaseRepo
             },
         });
     }
+    async findStoreWithId(id) {
+        return this.model.findOne({
+            _id: id
+        }).populate('hours').exec();
+    }
 };
 exports.StoresRepository = StoresRepository;
 exports.StoresRepository = StoresRepository = __decorate([

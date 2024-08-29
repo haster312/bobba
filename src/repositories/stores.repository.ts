@@ -84,4 +84,9 @@ export class StoresRepository extends BaseRepository<Store> {
 		});
 	}
 
+	async findStoreWithId(id): Promise<Store> {
+		return this.model.findOne({
+			_id: id
+		}).populate('hours').exec();
+	}
 }
