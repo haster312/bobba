@@ -139,27 +139,21 @@ export class StoresService {
 
     async getStoreByRadiusAndDistance({ state, lat, long, limit = 10, radius = 5, page, is_open }: LocationRadius) {
         let results = await this.storeRepository.findStoreByRadius({ state });
-        const currentDate = dayjs().format('dddd');
-        const currentTime = dayjs().format('HH:mm');
         if (is_open == 'true') {
             results = results.filter((store: Store) => {
-                let validHour = true;
-                const hours = store.hours;
-                const hour = hours.find((hour) => {
-                    return hour.day === currentDate;
-                });
+                return this.validateStoreHour(store);
+            }).map((store) => {
+                const storeObject = JSON.parse(JSON.stringify(store));
+                storeObject.isOpen = true;
 
-                if (hour === undefined) {
-                    return false;
-                }
+                return storeObject;
+            });
+        } else {
+            results = results.map((store: Store) => {
+                const storeObject = JSON.parse(JSON.stringify(store));
+                storeObject.isOpen = this.validateStoreHour(store);
 
-                if (hour.open === "Closed") {
-                    validHour = false;
-                } else {
-                    validHour = hour.open <= currentTime && hour.close >= currentTime;
-                }
-
-                return validHour;
+                return storeObject;
             });
         }
 
@@ -170,13 +164,12 @@ export class StoresService {
 
             // Calculate distance
             results = results.map((store) => {
-                const storeObject = JSON.parse(JSON.stringify(store));
-                if (storeObject.lat && storeObject.long) {
-                    storeObject.distance = this.getDistance(lat1, long1, storeObject.lat, storeObject.long);
-                    storeObject.distance = (storeObject.distance / 1000).toFixed(2);
+                if (store.lat && store.long) {
+                    store.distance = this.getDistance(lat1, long1, store.lat, store.long);
+                    store.distance = parseFloat((store.distance / 1000).toFixed(2));
                 }
 
-                return storeObject;
+                return store;
             });
 
             // Filter by radius
@@ -192,5 +185,27 @@ export class StoresService {
         const paginatedResults = results.slice(startIndex, endIndex);
 
         return { results: paginatedResults, total, pages };
+    }
+
+    validateStoreHour(store: Store) {
+        let validHour = true;
+        const currentDate = dayjs().format('dddd');
+        const currentTime = dayjs().format('HH:mm');
+        const hours = store.hours;
+        const hour = hours.find((hour) => {
+            return hour.day === currentDate;
+        });
+
+        if (hour === undefined) {
+            return false;
+        }
+
+        if (hour.open === "Closed") {
+            validHour = false;
+        } else {
+            validHour = hour.open <= currentTime && hour.close >= currentTime;
+        }
+
+        return validHour;
     }
 }

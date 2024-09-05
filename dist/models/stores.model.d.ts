@@ -44,6 +44,7 @@ export declare class Store extends BaseModel {
     url: string;
     distance: number;
     hours: StoreHour[];
+    isOpen: boolean;
 }
 export declare const StoresModel: import("mongoose").Schema<Store, import("mongoose").Model<Store, any, any, any, import("mongoose").Document<unknown, any, Store> & Store & Required<{
     _id: string;

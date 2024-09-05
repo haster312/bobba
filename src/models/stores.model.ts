@@ -66,6 +66,7 @@ export class Store extends BaseModel {
     distance: number;
 
     hours: StoreHour[]
+    isOpen: boolean;
 }
 
 export const StoresModel = SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });

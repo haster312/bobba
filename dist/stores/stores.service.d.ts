@@ -21,4 +21,5 @@ export declare class StoresService {
         total: number;
         pages: number;
     }>;
+    validateStoreHour(store: Store): boolean;
 }
