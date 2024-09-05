@@ -26,7 +26,7 @@ export class StoresController {
         try {
             let stores: Array<Store>;
             if (locationRadius.lat && locationRadius.long) {
-                const { results } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
+                const results = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
                 if (results.length == 0) {
                     return res.status(HttpStatus.BAD_REQUEST).send({
                         message: "Cannot find any store, increase distance"
@@ -47,7 +47,7 @@ export class StoresController {
     @Get("/radius")
     async getStoreByLocation(@Query() locationRadius: LocationRadius, @Req() req, @Res() res) {
         try {
-            const { results, total, pages } = await this.storeService.storeRepository.findStoreByRadius(locationRadius);
+            const { results, total, pages } = await this.storeService.getStoreByRadiusAndDistance(locationRadius);
 
             return res.status(HttpStatus.OK).json({
                 items: results,
@@ -69,7 +69,7 @@ export class StoresController {
 
             if (results.length == 0) {
                 return res.status(HttpStatus.BAD_REQUEST).send({
-                    message: "Cannot get lit stores for current country"
+                    message: "Cannot get list stores for current country"
                 });
             }
 

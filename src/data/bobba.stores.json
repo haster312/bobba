@@ -1597,4 +1597,36 @@
   "updatedAt": {
     "$date": "2024-08-25T15:55:28.134Z"
   }
-}]
+},
+  {
+    "_id": {
+      "$oid": "66cb53f0af97cd5c29e4e43f"
+    },
+    "storeNumber": "5181",
+    "fax": "",
+    "email": "",
+    "storeName": "PHY",
+    "storeAddress": "122 SW 5th Street",
+    "lat": 44.276071,
+    "long": -121.175565,
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        -121.175565,
+        44.276071
+      ]
+    },
+    "city": "Redmond",
+    "state": "OR",
+    "stateName": "Oregon",
+    "postalCode": "97756",
+    "countryCode": "US",
+    "country": "United States",
+    "url": "https://bobablastic.com/redmond",
+    "createdAt": {
+      "$date": "2024-08-25T15:55:28.134Z"
+    },
+    "updatedAt": {
+      "$date": "2024-08-25T15:55:28.134Z"
+    }
+  }]

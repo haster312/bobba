@@ -1,6 +1,7 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { HydratedDocument } from "mongoose";
+import {Expression, HydratedDocument, ObjectId} from "mongoose";
 import { BaseModel } from "./base.model";
+import { StoreHour } from './store-hour.model';
 
 export type StoreDocument = HydratedDocument<Store>;
 interface Geometry {
@@ -61,6 +62,10 @@ export class Store extends BaseModel {
 
     @Prop()
     url: string;
+
+    distance: number;
+
+    hours: StoreHour[]
 }
 
 export const StoresModel = SchemaFactory.createForClass(Store).index({ geometry: "2dsphere" });

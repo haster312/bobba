@@ -4,6 +4,7 @@ import {Model} from "mongoose";
 import {BaseRepository} from "./base.repository";
 import {Store} from "../models/stores.model";
 import {LocationRadius} from "../validator/LocationRadius";
+import * as dayjs from "dayjs";
 
 @Injectable()
 export class StoresRepository extends BaseRepository<Store> {
@@ -18,39 +19,18 @@ export class StoresRepository extends BaseRepository<Store> {
 		return this.model.find().populate('hours').exec();
 	}
 
-	async findStoreByRadius({ lat, long, radius = 5, state = null, page, limit = 10}: LocationRadius): Promise<{ results: Store[], total: number, pages: number}>{
+	async findStoreByRadius({ state = null }): Promise<Store[]>{
 		let query: Record<string, any> = {
 			stateName: state,
 		};
 
-		if (lat !== undefined && long !== undefined) {
-			const earthRadiusInMeters = 6378100;
-			const radiusInRadians = (radius * 1000) / earthRadiusInMeters;
-
-			query.geometry = {
-				$geoWithin: {
-					$centerSphere: [[long, lat], radiusInRadians],
-				},
-			};
-		}
-
 		// Fetch paginated results
 		const results = await this.model
 			.find(query)
-			.skip((page - 1) * limit)
-			.limit(limit)
 			.populate('hours')
 			.exec();
 
-		// Count total documents
-		const total = await this.model.countDocuments(query);
-		const pages = Math.ceil(total / limit);
-
-		return {
-			results,
-			total,
-			pages,
-		};
+		return results;
 	}
 
 	async findStoreByCountryCode(countryCode: string): Promise<Store[]> {
