@@ -14,5 +14,6 @@ export declare class AuthService {
     constructor(usersService: UsersService, jwtService: JwtService, twilioService: TwilioService);
     validatePhoneToken(validatePhoneToken: ValidatePhoneToken): Promise<UserToken | null>;
     sendPhoneToken(phoneNumber: any): Promise<User>;
+    sendDeleteToken(phoneNumber: string): Promise<User>;
 }
 export {};

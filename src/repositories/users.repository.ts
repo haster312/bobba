@@ -12,4 +12,8 @@ export class UsersRepository extends BaseRepository<User> {
 	) {
 		super(userRepository);
 	}
+
+	async deleteUser(user: User) {
+		return this.model.findByIdAndDelete(user._id);
+	}
 }

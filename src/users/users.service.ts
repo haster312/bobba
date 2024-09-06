@@ -19,10 +19,24 @@ export class UsersService {
 
 		if (!user) {
 			user = await this.usersRepository.create({ phoneNumber });
-			console.log(user);
 		}
 
 		user.verifyToken = await this.generateTokenAndCheck();
+		user = await this.usersRepository.update(user._id, user);
+
+		return user;
+	}
+
+	async generateDeleteToken(phoneNumber: string) {
+		let user = await this.usersRepository.findOneByCondition({
+			phoneNumber,
+		});
+
+		if (!user) {
+			user = await this.usersRepository.create({ phoneNumber });
+		}
+
+		user.deleteToken = await this.generateTokenAndCheck();
 		user = await this.usersRepository.update(user._id, user);
 
 		return user;
@@ -43,5 +57,14 @@ export class UsersService {
 
 	async clearVerityToken(user: User) {
 		return this.usersRepository.update(user._id, user);
+	}
+
+	async deleteUser(user: User) {
+		const deleted = this.usersRepository.deleteUser(user);
+		if (deleted) {
+			// remove all stuff
+		}
+
+		return deleted;
 	}
 }

@@ -1,4 +1,4 @@
-import { Module } from "@nestjs/common";
+import { Module, Global } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 import { AuthController } from "./auth.controller";
 import { UsersModule } from "../users/users.module";
@@ -8,6 +8,7 @@ import { ConfigModule, ConfigService } from "@nestjs/config";
 import { TwilioService } from "../twilio/twilio.service";
 import { JwtStrategy } from "./JwtStrategy";
 
+@Global()
 @Module({
 	imports: [
 		UsersModule,

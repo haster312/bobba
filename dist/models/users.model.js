@@ -68,6 +68,10 @@ __decorate([
     __metadata("design:type", String)
 ], User.prototype, "verifyToken", void 0);
 __decorate([
+    (0, mongoose_1.Prop)({ minlength: 4, maxlength: 6 }),
+    __metadata("design:type", String)
+], User.prototype, "deleteToken", void 0);
+__decorate([
     (0, mongoose_1.Prop)({}),
     __metadata("design:type", Boolean)
 ], User.prototype, "acceptTerm", void 0);

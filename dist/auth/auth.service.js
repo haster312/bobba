@@ -44,6 +44,11 @@ let AuthService = class AuthService {
         await this.twilioService.sendVerifySMS(user.verifyToken, user.phoneNumber);
         return user;
     }
+    async sendDeleteToken(phoneNumber) {
+        const user = await this.usersService.generateDeleteToken(phoneNumber);
+        await this.twilioService.sendVerifySMS(user.deleteToken, user.phoneNumber);
+        return user;
+    }
 };
 exports.AuthService = AuthService;
 exports.AuthService = AuthService = __decorate([

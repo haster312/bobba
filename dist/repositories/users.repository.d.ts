@@ -28,4 +28,7 @@ import { BaseRepository } from "./base.repository";
 export declare class UsersRepository extends BaseRepository<User> {
     private userRepository;
     constructor(userRepository: Model<User>);
+    deleteUser(user: User): Promise<import("mongoose").Document<unknown, {}, User> & User & Required<{
+        _id: string;
+    }>>;
 }

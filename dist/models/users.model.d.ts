@@ -41,6 +41,7 @@ export declare class User extends BaseModel {
     appleToken: string;
     gender: GENDER;
     verifyToken: string;
+    deleteToken: string;
     acceptTerm: Boolean;
     accessToken: string;
 }

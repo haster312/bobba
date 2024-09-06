@@ -23,6 +23,9 @@ let UsersRepository = class UsersRepository extends base_repository_1.BaseReposi
         super(userRepository);
         this.userRepository = userRepository;
     }
+    async deleteUser(user) {
+        return this.model.findByIdAndDelete(user._id);
+    }
 };
 exports.UsersRepository = UsersRepository;
 exports.UsersRepository = UsersRepository = __decorate([

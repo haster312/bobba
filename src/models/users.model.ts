@@ -52,8 +52,12 @@ export class User extends BaseModel {
 	@Prop({ minlength: 4, maxlength: 6 })
 	verifyToken: string;
 
+	@Prop({ minlength: 4, maxlength: 6 })
+	deleteToken: string;
+
 	@Prop({})
 	acceptTerm: Boolean
+
 	accessToken: string;
 }
 

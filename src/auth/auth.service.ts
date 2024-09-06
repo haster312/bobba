@@ -53,5 +53,14 @@ export class AuthService {
 		return user;
 	}
 
+	async sendDeleteToken(phoneNumber: string): Promise<User> {
+		const user = await this.usersService.generateDeleteToken(phoneNumber);
+		await this.twilioService.sendVerifySMS(
+			user.deleteToken,
+			user.phoneNumber,
+		);
+
+		return user;
+	}
 	// Implement validate google & apple token
 }
