@@ -20,29 +20,35 @@ export class ProductsController  {
     @UseGuards(JwtAuthGuard)
     @HttpCode(HttpStatus.OK)
     @Get("/")
-    async getAllStores(@Req() req, @Res() res) {
+    async getAllProducts(@Req() req, @Res() res) {
         try {
             let products = await this.productsService.productRepository.findAll();
-            const addonGroup = await this.productsService.addonRepository.getAddonGroupByType();
-            products = products.map(product => {
-                if (product.hasFlavor > 0) {
-                    product.set(AddonType.FLAVOR, addonGroup[AddonType.FLAVOR]);
-                }
 
-                if (product.hasCondiment > 0) {
-                    product.set(AddonType.CONDIMENT, addonGroup[AddonType.CONDIMENT]);
-                }
+            return res.status(HttpStatus.OK).send(products);
+        } catch (e) {
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
 
-                if (product.hasTopping > 0) {
-                    product.set(AddonType.TOPPING, addonGroup[AddonType.TOPPING]);
-                }
+    @UseGuards(JwtAuthGuard)
+    @HttpCode(HttpStatus.OK)
+    @Get("/drink")
+    async getAllDrink(@Req() req, @Res() res) {
+        try {
+            let products = await this.productsService.getAllDrink();
 
-                if (product.hasBase > 0) {
-                    product.set(AddonType.BASE, addonGroup[AddonType.BASE]);
-                }
+            return res.status(HttpStatus.OK).send(products);
+        } catch (e) {
+            return res.status(HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
 
-                return product;
-            });
+    @UseGuards(JwtAuthGuard)
+    @HttpCode(HttpStatus.OK)
+    @Get("/food")
+    async getAllFood(@Req() req, @Res() res) {
+        try {
+            let products = await this.productsService.getAllFood();
 
             return res.status(HttpStatus.OK).send(products);
         } catch (e) {

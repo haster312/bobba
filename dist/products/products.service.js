@@ -79,6 +79,37 @@ let ProductsService = class ProductsService {
             }
         }
     }
+    async getAllProducts() {
+        let products = await this.productRepository.findAll();
+        return this.getProductAddon(products);
+    }
+    async getAllDrink() {
+        let products = await this.productRepository.getDrinkProduct();
+        return this.getProductAddon(products);
+    }
+    async getAllFood() {
+        let products = await this.productRepository.getFoodProduct();
+        return this.getProductAddon(products);
+    }
+    async getProductAddon(products) {
+        const addonGroup = await this.addonRepository.getAddonGroupByType();
+        products = products.map((product) => {
+            if (product.hasFlavor > 0) {
+                product[addon_model_1.AddonType.FLAVOR] = addonGroup[addon_model_1.AddonType.FLAVOR];
+            }
+            if (product.hasCondiment > 0) {
+                product[addon_model_1.AddonType.CONDIMENT] = addonGroup[addon_model_1.AddonType.CONDIMENT];
+            }
+            if (product.hasTopping > 0) {
+                product[addon_model_1.AddonType.TOPPING] = addonGroup[addon_model_1.AddonType.TOPPING];
+            }
+            if (product.hasBase > 0) {
+                product[addon_model_1.AddonType.BASE] = addonGroup[addon_model_1.AddonType.BASE];
+            }
+            return product;
+        });
+        return products;
+    }
 };
 exports.ProductsService = ProductsService;
 exports.ProductsService = ProductsService = __decorate([

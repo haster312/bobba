@@ -54,6 +54,10 @@ __decorate([
 __decorate([
     (0, mongoose_1.Prop)(),
     __metadata("design:type", String)
+], User.prototype, "profilePicture", void 0);
+__decorate([
+    (0, mongoose_1.Prop)(),
+    __metadata("design:type", String)
 ], User.prototype, "googleToken", void 0);
 __decorate([
     (0, mongoose_1.Prop)(),

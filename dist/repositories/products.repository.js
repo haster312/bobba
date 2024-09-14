@@ -23,6 +23,16 @@ let ProductsRepository = class ProductsRepository extends base_repository_1.Base
         super(productRepository);
         this.productRepository = productRepository;
     }
+    async getDrinkProduct() {
+        return this.model.find({
+            productCategory: products_model_1.ProductCategory.DRINK
+        });
+    }
+    async getFoodProduct() {
+        return this.model.find({
+            productCategory: products_model_1.ProductCategory.FOOD
+        });
+    }
 };
 exports.ProductsRepository = ProductsRepository;
 exports.ProductsRepository = ProductsRepository = __decorate([

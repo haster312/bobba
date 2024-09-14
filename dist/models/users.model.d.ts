@@ -37,6 +37,7 @@ export declare class User extends BaseModel {
     phoneNumber: string;
     birthday: string;
     email: string;
+    profilePicture: string;
     googleToken: string;
     appleToken: string;
     gender: GENDER;

@@ -9,5 +9,11 @@ export default () => ({
 	TWILIO_ACCOUNT_SID: process.env.TWILIO_ACCOUNT_SID,
 	TWILIO_AUTH_TOKEN: process.env.TWILIO_AUTH_TOKEN,
 	TWILIO_PHONE_NUMBER: process.env.TWILIO_PHONE_NUMBER,
-	API_KEY: process.env.API_KEY
+	API_KEY: process.env.API_KEY,
+	AWS: {
+		ACCESS_KEY: process.env.AWS_ACCESS_KEY as string,
+		ACCESS_SECRET: process.env.AWS_SECRET_KEY as string,
+		REGION: process.env.AWS_REGION as string,
+		S3_PRODUCT_BUCKET: process.env.S3_PROFILE_BUCKET,
+	}
 });

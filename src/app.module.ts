@@ -12,6 +12,7 @@ import { JwtService } from "@nestjs/jwt";
 import { TwilioService } from "./twilio/twilio.service";
 import { StoresModule } from './stores/stores.module';
 import { ProductsModule } from './products/products.module';
+import {CommonModule} from "./common/common.module";
 
 @Module({
 	imports: [
@@ -21,6 +22,7 @@ import { ProductsModule } from './products/products.module';
 		mongodb,
 		StoresModule,
 		ProductsModule,
+		CommonModule,
 	],
 	controllers: [AppController],
 	providers: [

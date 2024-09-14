@@ -4,7 +4,7 @@ import * as fs from "fs";
 import * as path from "path";
 import {AddonRepository} from "../repositories/addon.repository";
 import {AddonType} from "../models/addon.model";
-import {ProductCategory} from "../models/products.model";
+import {Product, ProductCategory} from "../models/products.model";
 
 @Injectable()
 export class ProductsService {
@@ -75,5 +75,50 @@ export class ProductsService {
                 }
             }
         }
+    }
+
+    async getAllProducts() {
+        let products = await this.productRepository.findAll();
+
+        return this.getProductAddon(products);
+    }
+
+    async getAllDrink() {
+        let products = await this.productRepository.getDrinkProduct();
+
+        return this.getProductAddon(products);
+    }
+
+    async getAllFood() {
+        let products = await this.productRepository.getFoodProduct();
+
+        return this.getProductAddon(products);
+    }
+
+    async getProductAddon(products: Product []) {
+        const addonGroup = await this.addonRepository.getAddonGroupByType();
+
+        products = products.map((product) => {
+            if (product.hasFlavor > 0) {
+                product[AddonType.FLAVOR] = addonGroup[AddonType.FLAVOR];
+            }
+
+            if (product.hasCondiment > 0) {
+                product[AddonType.CONDIMENT] = addonGroup[AddonType.CONDIMENT];
+            }
+
+            if (product.hasTopping > 0) {
+                product[AddonType.TOPPING] = addonGroup[AddonType.TOPPING];
+            }
+
+            if (product.hasBase > 0) {
+                product[AddonType.BASE] = addonGroup[AddonType.BASE];
+            }
+
+
+            return product;
+        });
+
+        return products;
     }
 }

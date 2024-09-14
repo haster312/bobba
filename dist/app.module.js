@@ -21,6 +21,7 @@ const jwt_1 = require("@nestjs/jwt");
 const twilio_service_1 = require("./twilio/twilio.service");
 const stores_module_1 = require("./stores/stores.module");
 const products_module_1 = require("./products/products.module");
+const common_module_1 = require("./common/common.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -33,6 +34,7 @@ exports.AppModule = AppModule = __decorate([
             mongodb_1.default,
             stores_module_1.StoresModule,
             products_module_1.ProductsModule,
+            common_module_1.CommonModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [

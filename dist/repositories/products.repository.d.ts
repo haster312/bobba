@@ -28,4 +28,10 @@ import { Product } from "../models/products.model";
 export declare class ProductsRepository extends BaseRepository<Product> {
     private productRepository;
     constructor(productRepository: Model<Product>);
+    getDrinkProduct(): Promise<(import("mongoose").Document<unknown, {}, Product> & Product & Required<{
+        _id: string;
+    }>)[]>;
+    getFoodProduct(): Promise<(import("mongoose").Document<unknown, {}, Product> & Product & Required<{
+        _id: string;
+    }>)[]>;
 }

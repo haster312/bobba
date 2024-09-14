@@ -16,30 +16,31 @@ exports.ProductsController = void 0;
 const common_1 = require("@nestjs/common");
 const jwt_auth_guard_1 = require("../auth/jwt-auth-guard");
 const products_service_1 = require("./products.service");
-const addon_model_1 = require("../models/addon.model");
 let ProductsController = class ProductsController {
     constructor(productsService) {
         this.productsService = productsService;
     }
-    async getAllStores(req, res) {
+    async getAllProducts(req, res) {
         try {
             let products = await this.productsService.productRepository.findAll();
-            const addonGroup = await this.productsService.addonRepository.getAddonGroupByType();
-            products = products.map(product => {
-                if (product.hasFlavor > 0) {
-                    product.set(addon_model_1.AddonType.FLAVOR, addonGroup[addon_model_1.AddonType.FLAVOR]);
-                }
-                if (product.hasCondiment > 0) {
-                    product.set(addon_model_1.AddonType.CONDIMENT, addonGroup[addon_model_1.AddonType.CONDIMENT]);
-                }
-                if (product.hasTopping > 0) {
-                    product.set(addon_model_1.AddonType.TOPPING, addonGroup[addon_model_1.AddonType.TOPPING]);
-                }
-                if (product.hasBase > 0) {
-                    product.set(addon_model_1.AddonType.BASE, addonGroup[addon_model_1.AddonType.BASE]);
-                }
-                return product;
-            });
+            return res.status(common_1.HttpStatus.OK).send(products);
+        }
+        catch (e) {
+            return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
+    async getAllDrink(req, res) {
+        try {
+            let products = await this.productsService.getAllDrink();
+            return res.status(common_1.HttpStatus.OK).send(products);
+        }
+        catch (e) {
+            return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
+    async getAllFood(req, res) {
+        try {
+            let products = await this.productsService.getAllFood();
             return res.status(common_1.HttpStatus.OK).send(products);
         }
         catch (e) {
@@ -57,7 +58,27 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
-], ProductsController.prototype, "getAllStores", null);
+], ProductsController.prototype, "getAllProducts", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
+    (0, common_1.HttpCode)(common_1.HttpStatus.OK),
+    (0, common_1.Get)("/drink"),
+    __param(0, (0, common_1.Req)()),
+    __param(1, (0, common_1.Res)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], ProductsController.prototype, "getAllDrink", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
+    (0, common_1.HttpCode)(common_1.HttpStatus.OK),
+    (0, common_1.Get)("/food"),
+    __param(0, (0, common_1.Req)()),
+    __param(1, (0, common_1.Res)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:returntype", Promise)
+], ProductsController.prototype, "getAllFood", null);
 exports.ProductsController = ProductsController = __decorate([
     (0, common_1.Controller)("products"),
     __metadata("design:paramtypes", [products_service_1.ProductsService])

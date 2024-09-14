@@ -41,6 +41,9 @@ export class User extends BaseModel {
 	email: string;
 
 	@Prop()
+	profilePicture: string;
+
+	@Prop()
 	googleToken: string;
 
 	@Prop()
