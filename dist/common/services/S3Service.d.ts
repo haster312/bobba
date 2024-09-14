@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { ConfigService } from '@nestjs/config';
 export interface ImagePath {
     main: string;
@@ -12,7 +11,7 @@ export declare class S3Service {
     private bucketName;
     constructor(configService: ConfigService);
     uploadBase64(base64String: string): Promise<string>;
-    resizeMainImageWithPercentage(buffer: any): Promise<Buffer>;
+    resizeMainImageWithPercentage(buffer: any): Promise<any>;
     getS3ProductUrl(bucketName: any, key: any): string;
     uploadFile(base64Content: string): Promise<string>;
 }
