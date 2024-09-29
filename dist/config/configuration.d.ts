@@ -1,3 +1,8 @@
+export type RABBITMQ = {
+    NAME: string;
+    QUEUE: string;
+    CONNECT_URI: string;
+};
 declare const _default: () => {
     PORT: number;
     MONGO_URI: string;
@@ -11,6 +16,11 @@ declare const _default: () => {
         ACCESS_SECRET: string;
         REGION: string;
         S3_PRODUCT_BUCKET: string;
+    };
+    RABBIT_MQ: {
+        NAME: string;
+        QUEUE: string;
+        CONNECT_URI: string;
     };
 };
 export default _default;

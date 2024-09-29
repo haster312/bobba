@@ -16,6 +16,11 @@ exports.default = () => ({
         ACCESS_SECRET: process.env.AWS_SECRET_KEY,
         REGION: process.env.AWS_REGION,
         S3_PRODUCT_BUCKET: process.env.S3_PROFILE_BUCKET,
+    },
+    RABBIT_MQ: {
+        NAME: process.env.RABBITMQ_NAME ?? 'bobba',
+        QUEUE: process.env.RABBITMQ_QUEUE,
+        CONNECT_URI: `amqp://${process.env.RABBITMQ_USER}:${process.env.RABBITMQ_PASSWORD}@${process.env.RABBITMQ_URI}:${process.env.RABBITMQ_PORT}` ?? 'amqp://localhost:5672',
     }
 });
 //# sourceMappingURL=configuration.js.map

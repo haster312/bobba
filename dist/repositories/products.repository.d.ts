@@ -34,4 +34,7 @@ export declare class ProductsRepository extends BaseRepository<Product> {
     getFoodProduct(): Promise<(import("mongoose").Document<unknown, {}, Product> & Product & Required<{
         _id: string;
     }>)[]>;
+    getProductDetail(id: string): Promise<import("mongoose").Document<unknown, {}, Product> & Product & Required<{
+        _id: string;
+    }>>;
 }

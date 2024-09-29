@@ -33,6 +33,13 @@ let ProductsRepository = class ProductsRepository extends base_repository_1.Base
             productCategory: products_model_1.ProductCategory.FOOD
         });
     }
+    async getProductDetail(id) {
+        const product = await this.model.findById(id).exec();
+        if (!product) {
+            throw new common_1.NotFoundException(`Product with ID ${id} not found`);
+        }
+        return product;
+    }
 };
 exports.ProductsRepository = ProductsRepository;
 exports.ProductsRepository = ProductsRepository = __decorate([

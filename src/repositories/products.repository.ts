@@ -1,4 +1,4 @@
-import { Injectable } from "@nestjs/common";
+import {Injectable, NotFoundException} from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
 import { BaseRepository } from "./base.repository";
@@ -23,5 +23,14 @@ export class ProductsRepository extends BaseRepository<Product> {
 		return this.model.find({
 			productCategory: ProductCategory.FOOD
 		})
+	}
+
+	async getProductDetail(id: string) {
+		const product = await this.model.findById(id).exec();
+		if (!product) {
+			throw new NotFoundException(`Product with ID ${id} not found`);
+		}
+
+		return product;
 	}
 }

@@ -3,6 +3,9 @@ export declare class ProductsController {
     private productsService;
     constructor(productsService: ProductsService);
     getAllProducts(req: any, res: any): Promise<any>;
+    getProductDetail(param: {
+        id: string;
+    }, req: any, res: any): Promise<any>;
     getAllDrink(req: any, res: any): Promise<any>;
     getAllFood(req: any, res: any): Promise<any>;
 }

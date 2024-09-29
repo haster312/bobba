@@ -5,12 +5,25 @@ const app_module_1 = require("./app.module");
 const config_1 = require("@nestjs/config");
 const common_1 = require("@nestjs/common");
 const bodyParser = require("body-parser");
+const microservices_1 = require("@nestjs/microservices");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     const configService = app.get(config_1.ConfigService);
     app.use(bodyParser.json({ limit: '10mb' }));
     app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
     app.useGlobalPipes(new common_1.ValidationPipe());
+    const rabbitMQ = configService.get('RABBIT_MQ');
+    app.connectMicroservice({
+        transport: microservices_1.Transport.RMQ,
+        options: {
+            urls: [`${rabbitMQ.CONNECT_URI}`],
+            queue: rabbitMQ.QUEUE,
+            queueOptions: {
+                durable: true,
+            },
+        },
+    });
+    await app.startAllMicroservices();
     await app.listen(configService.get("PORT"));
     console.table({ "Start with port": configService.get("PORT") });
     const server = app.getHttpServer();

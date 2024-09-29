@@ -2,6 +2,12 @@ import * as dotenv from "dotenv";
 import * as process from "process";
 dotenv.config();
 
+export type RABBITMQ = {
+	NAME: string;
+	QUEUE: string;
+	CONNECT_URI: string;
+}
+
 export default () => ({
     PORT: parseInt(process.env.PORT, 10) || 3000,
     MONGO_URI: process.env.MONGO_URI,
@@ -15,5 +21,10 @@ export default () => ({
 		ACCESS_SECRET: process.env.AWS_SECRET_KEY as string,
 		REGION: process.env.AWS_REGION as string,
 		S3_PRODUCT_BUCKET: process.env.S3_PROFILE_BUCKET,
+	},
+	RABBIT_MQ: {
+		NAME: process.env.RABBITMQ_NAME ?? 'bobba',
+		QUEUE: process.env.RABBITMQ_QUEUE,
+		CONNECT_URI: `amqp://${process.env.RABBITMQ_USER}:${process.env.RABBITMQ_PASSWORD}@${process.env.RABBITMQ_URI}:${process.env.RABBITMQ_PORT}` ?? 'amqp://localhost:5672',
 	}
 });

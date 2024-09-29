@@ -1,7 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { HydratedDocument } from "mongoose";
 import { BaseModel } from "./base.model";
-import {AddonType} from "./addon.model";
 
 export type ProductDocument = HydratedDocument<Product>;
 export enum ProductCategory {

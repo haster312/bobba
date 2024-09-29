@@ -83,6 +83,13 @@ export class ProductsService {
         return this.getProductAddon(products);
     }
 
+    async getProductDetail(id: string) {
+        const product = await this.productRepository.getProductDetail(id);
+        const addonGroup = await this.addonRepository.getAddonGroupByType();
+
+        return this.applyProductAddon(product, addonGroup);
+    }
+
     async getAllDrink() {
         let products = await this.productRepository.getDrinkProduct();
 
@@ -99,26 +106,32 @@ export class ProductsService {
         const addonGroup = await this.addonRepository.getAddonGroupByType();
 
         products = products.map((product) => {
-            if (product.hasFlavor > 0) {
-                product[AddonType.FLAVOR] = addonGroup[AddonType.FLAVOR];
-            }
-
-            if (product.hasCondiment > 0) {
-                product[AddonType.CONDIMENT] = addonGroup[AddonType.CONDIMENT];
-            }
-
-            if (product.hasTopping > 0) {
-                product[AddonType.TOPPING] = addonGroup[AddonType.TOPPING];
-            }
-
-            if (product.hasBase > 0) {
-                product[AddonType.BASE] = addonGroup[AddonType.BASE];
-            }
-
+            product = this.applyProductAddon(product, addonGroup);
 
             return product;
         });
 
         return products;
+    }
+
+    applyProductAddon(product: Product, addonGroup: {}) {
+        if (product.hasFlavor > 0) {
+            product[AddonType.FLAVOR] = addonGroup[AddonType.FLAVOR];
+        }
+
+        if (product.hasCondiment > 0) {
+            product[AddonType.CONDIMENT] = addonGroup[AddonType.CONDIMENT];
+        }
+
+        if (product.hasTopping > 0) {
+            product[AddonType.TOPPING] = addonGroup[AddonType.TOPPING];
+        }
+
+        if (product.hasBase > 0) {
+            product[AddonType.BASE] = addonGroup[AddonType.BASE];
+        }
+
+
+        return product;
     }
 }

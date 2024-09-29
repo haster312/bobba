@@ -22,8 +22,18 @@ let ProductsController = class ProductsController {
     }
     async getAllProducts(req, res) {
         try {
-            let products = await this.productsService.productRepository.findAll();
+            let products = await this.productsService.getAllProducts();
             return res.status(common_1.HttpStatus.OK).send(products);
+        }
+        catch (e) {
+            return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
+        }
+    }
+    async getProductDetail(param, req, res) {
+        try {
+            const { id } = param;
+            let product = await this.productsService.getProductDetail(id);
+            return res.status(common_1.HttpStatus.OK).send(product);
         }
         catch (e) {
             return res.status(common_1.HttpStatus.INTERNAL_SERVER_ERROR).send({ message: e.message });
@@ -59,6 +69,17 @@ __decorate([
     __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], ProductsController.prototype, "getAllProducts", null);
+__decorate([
+    (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
+    (0, common_1.HttpCode)(common_1.HttpStatus.OK),
+    (0, common_1.Get)("/detail/:id"),
+    __param(0, (0, common_1.Param)()),
+    __param(1, (0, common_1.Req)()),
+    __param(2, (0, common_1.Res)()),
+    __metadata("design:type", Function),
+    __metadata("design:paramtypes", [Object, Object, Object]),
+    __metadata("design:returntype", Promise)
+], ProductsController.prototype, "getProductDetail", null);
 __decorate([
     (0, common_1.UseGuards)(jwt_auth_guard_1.JwtAuthGuard),
     (0, common_1.HttpCode)(common_1.HttpStatus.OK),

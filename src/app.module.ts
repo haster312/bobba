@@ -13,6 +13,7 @@ import { TwilioService } from "./twilio/twilio.service";
 import { StoresModule } from './stores/stores.module';
 import { ProductsModule } from './products/products.module';
 import {CommonModule} from "./common/common.module";
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
 	imports: [
@@ -23,6 +24,7 @@ import {CommonModule} from "./common/common.module";
 		StoresModule,
 		ProductsModule,
 		CommonModule,
+		OrdersModule,
 	],
 	controllers: [AppController],
 	providers: [

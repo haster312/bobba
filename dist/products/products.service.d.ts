@@ -10,7 +10,9 @@ export declare class ProductsService {
     migrate(): Promise<void>;
     initAddon(type?: AddonType): Promise<void>;
     getAllProducts(): Promise<Product[]>;
+    getProductDetail(id: string): Promise<Product>;
     getAllDrink(): Promise<Product[]>;
     getAllFood(): Promise<Product[]>;
     getProductAddon(products: Product[]): Promise<Product[]>;
+    applyProductAddon(product: Product, addonGroup: {}): Product;
 }
