@@ -9,28 +9,32 @@ import {RABBITMQ} from "../config/configuration";
 @Module({
     imports: [
         ConfigModule,
-        ClientsModule.registerAsync([
-            {
-                imports: [ConfigModule],
-                name: 'RABBITMQ_SERVICE',
-                useFactory: async (configService: ConfigService): Promise<ClientOptions> => {
-                    return {
-                        transport: Transport.RMQ,
-                        options: {
-                            urls: [configService.get<RABBITMQ>('RABBIT_MQ').CONNECT_URI],
-                            queue: configService.get<RABBITMQ>('RABBIT_MQ').QUEUE,
-                            queueOptions: {
-                                durable: false,
-                            },
-                        }
-                    };
-                },
-                inject: [ConfigService],
-            },
-        ]),
+        // ClientsModule.registerAsync([
+        //     {
+        //         imports: [ConfigModule],
+        //         name: 'RABBITMQ_SERVICE',
+        //         useFactory: async (configService: ConfigService): Promise<ClientOptions> => {
+        //             return {
+        //                 transport: Transport.RMQ,
+        //                 options: {
+        //                     urls: [configService.get<RABBITMQ>('RABBIT_MQ').CONNECT_URI],
+        //                     queue: configService.get<RABBITMQ>('RABBIT_MQ').QUEUE,
+        //                     queueOptions: {
+        //                         durable: false,
+        //                     },
+        //                 }
+        //             };
+        //         },
+        //         inject: [ConfigService],
+        //     },
+        // ]),
     ],
     controllers: [UploadController],
-    providers: [S3Service, ConfigService, RabbitMQService],
+    providers: [
+        S3Service,
+        ConfigService,
+        // RabbitMQService
+    ],
     exports: [S3Service],
 })
 
