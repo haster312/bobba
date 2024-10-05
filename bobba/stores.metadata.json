@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"geometry":"2dsphere"},"name":"geometry_2dsphere","background":true,"2dsphereIndexVersion":{"$numberInt":"3"}}],"uuid":"e81017192437431a905857d491326e38","collectionName":"stores","type":"collection"}
