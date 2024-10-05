@@ -16,19 +16,19 @@ async function bootstrap() {
 
     const rabbitMQ = configService.get<RABBITMQ>('RABBIT_MQ');
 
-    // RabbitMQ
-    // app.connectMicroservice<MicroserviceOptions>({
-    //     transport: Transport.RMQ,
-    //     options: {
-    //         urls: [`${rabbitMQ.CONNECT_URI}`],
-    //         queue: rabbitMQ.QUEUE,
-    //         queueOptions: {
-    //             durable: true,
-    //         },
-    //     },
-    // });
-    //
-    // await app.startAllMicroservices();
+    //RabbitMQ
+    app.connectMicroservice<MicroserviceOptions>({
+        transport: Transport.RMQ,
+        options: {
+            urls: [`${rabbitMQ.CONNECT_URI}`],
+            queue: rabbitMQ.QUEUE,
+            queueOptions: {
+                durable: true,
+            },
+        },
+    });
+
+    await app.startAllMicroservices();
     await app.listen(configService.get<number>("PORT"));
     console.table({ "Start with port": configService.get<number>("PORT") });
 

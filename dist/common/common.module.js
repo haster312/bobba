@@ -11,6 +11,8 @@ const common_1 = require("@nestjs/common");
 const S3Service_1 = require("./services/S3Service");
 const upload_controller_1 = require("./controllers/upload.controller");
 const config_1 = require("@nestjs/config");
+const RabbitMQService_1 = require("./services/RabbitMQService");
+const microservices_1 = require("@nestjs/microservices");
 let CommonModule = class CommonModule {
 };
 exports.CommonModule = CommonModule;
@@ -18,11 +20,31 @@ exports.CommonModule = CommonModule = __decorate([
     (0, common_1.Module)({
         imports: [
             config_1.ConfigModule,
+            microservices_1.ClientsModule.registerAsync([
+                {
+                    imports: [config_1.ConfigModule],
+                    name: 'RABBITMQ_SERVICE',
+                    useFactory: async (configService) => {
+                        return {
+                            transport: microservices_1.Transport.RMQ,
+                            options: {
+                                urls: [configService.get('RABBIT_MQ').CONNECT_URI],
+                                queue: configService.get('RABBIT_MQ').QUEUE,
+                                queueOptions: {
+                                    durable: false,
+                                },
+                            }
+                        };
+                    },
+                    inject: [config_1.ConfigService],
+                },
+            ]),
         ],
         controllers: [upload_controller_1.UploadController],
         providers: [
             S3Service_1.S3Service,
             config_1.ConfigService,
+            RabbitMQService_1.RabbitMQService
         ],
         exports: [S3Service_1.S3Service],
     })
